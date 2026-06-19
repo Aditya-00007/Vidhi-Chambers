@@ -5,6 +5,7 @@ import PracticeAreas from "../sections/PracticeAreas";
 import AboutSection from "../sections/AboutSection";
 import WhyChooseUsSection from "../sections/WhyChooseUsSection";
 import StatsSection from "../sections/StatsSection";
+import FooterCTA from "../sections/FooterCTA";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <AboutSection />
       <WhyChooseUsSection />
       <StatsSection />
+      <FooterCTA />
     </>
   );
 };

@@ -5,11 +5,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "About Us", href: "#about" },
-    { label: "Our People", href: "#people" },
-    { label: "Practice Areas", href: "#practice-areas" },
-    { label: "Our Clients", href: "#clients" },
-    { label: "Contact Us", href: "#contact" },
+    { label: "About Us", href: "/about" },
+    { label: "Our People", href: "/people" },
+    { label: "Practice Areas", href: "/practice-areas" },
+    { label: "Our Clients", href: "/clients" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   return (
