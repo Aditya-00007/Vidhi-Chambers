@@ -3,6 +3,9 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
 import AboutUSPage from "./pages/AboutUsPage";
+import OurTeamPage from "./pages/OurTeamPage";
+import PracticeAreasPage from "./pages/PracticeAreasPage";
+import ClientsPage from "./pages/ClientsPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUSPage />} />
+        <Route path="/team" element={<OurTeamPage />} />
+        <Route path="/practice-areas" element={<PracticeAreasPage />} />
+        <Route path="/clients" element={<ClientsPage />} />
       </Routes>
     </>
   );

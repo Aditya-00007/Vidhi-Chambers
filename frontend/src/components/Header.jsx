@@ -6,7 +6,7 @@ const Header = () => {
 
   const navItems = [
     { label: "About Us", href: "/about" },
-    { label: "Our People", href: "/people" },
+    { label: "Our Team", href: "/team" },
     { label: "Practice Areas", href: "/practice-areas" },
     { label: "Our Clients", href: "/clients" },
     { label: "Contact Us", href: "/contact" },
