@@ -46,10 +46,10 @@ shadow-2xl
               src={area.image}
               alt={area.title}
               className="
-            w-full
-            h-full
+            w-120
+            h-120
             object-cover
-            min-h-[500px]
+            
           "
             />
           </div>

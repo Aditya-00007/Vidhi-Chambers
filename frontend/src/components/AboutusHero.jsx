@@ -32,11 +32,11 @@ const AboutusHero = () => {
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <button className="rounded-xl bg-[#D4AF37] px-8 py-4 font-semibold text-[#0F172A] hover:scale-105 transition">
-              Schedule Consultation
+              <a href="/contact#contact">Schedule Consultation</a>
             </button>
 
             <button className="rounded-xl border-2 border-[#304669] px-8 py-4 font-semibold text-[#304669] hover:bg-[#304669] hover:text-white transition">
-              Explore Practice Areas
+              <a href="practice-areas">Explore Practice Areas</a>
             </button>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import StatCard from "../components/StatCard";
+import bgImg from "../assets/OIP-M.png";
 
 const StatsSection = () => {
   const statsData = [
@@ -81,7 +82,7 @@ const StatsSection = () => {
           >
             {/* Background Image */}
             <img
-              src="/src/assets/OIP-M.png"
+              src={bgImg}
               alt="Vidhi Chambers"
               className="
                 absolute

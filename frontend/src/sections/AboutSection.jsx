@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const AboutSection = () => {
   const aboutData = {
@@ -8,7 +9,7 @@ const AboutSection = () => {
       name: "Adv. Shivam Sharma",
       designation: "Founder & Managing Partner",
       experience: "15+",
-      image: "/src/assets/logo.png",
+      image: logo,
     },
 
     description:
@@ -73,7 +74,7 @@ const AboutSection = () => {
                   hover:gap-4
                 "
               >
-                More About Us
+                <a href="/about">More About Us</a>
                 <ArrowRight size={18} />
               </button>
             </div>

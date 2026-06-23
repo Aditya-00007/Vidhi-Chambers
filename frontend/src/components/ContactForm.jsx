@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import courts from "../data/courts";
 
-const ContactForm = () => {
+const ContactForm = ({ backgroundImage }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,63 +37,26 @@ const ContactForm = () => {
     });
   };
 
-  const courts = [
-    "Punjab & Haryana High Court, Chandigarh",
-    "Chandigarh District Court",
-    "Ambala",
-    "Bhiwani",
-    "Faridabad",
-    "Fatehabad",
-    "Gurugram",
-    "Hisar",
-    "Jhajjar",
-    "Jind",
-    "Kaithal",
-    "Karnal",
-    "Kurukshetra",
-    "Mahendragarh (Narnaul)",
-    "Nuh (Mewat)",
-    "Palwal",
-    "Panchkula",
-    "Panipat",
-    "Rewari",
-    "Rohtak",
-    "Sirsa",
-    "Sonipat",
-    "Yamunanagar (Jagadhri)",
-    "Charkhi Dadri",
-    "Amritsar",
-    "Barnala",
-    "Bathinda",
-    "Faridkot",
-    "Fatehgarh Sahib",
-    "Fazilka",
-    "Ferozepur",
-    "Gurdaspur",
-    "Hoshiarpur",
-    "Jalandhar",
-    "Kapurthala",
-    "Ludhiana",
-    "Mansa",
-    "Moga",
-    "Pathankot",
-    "Patiala",
-    "Rupnagar (Ropar)",
-    "Sangrur",
-    "SAS Nagar (Mohali)",
-    "SBS Nagar (Nawanshahr)",
-    "Sri Muktsar Sahib",
-    "Tarn Taran",
-    "Malerkotla",
-  ];
+  const sectionStyle = backgroundImage
+    ? {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }
+    : {};
 
   return (
     <section
       id="contact"
-      className=" py-13 px-6 bg-[#F3EEE4] bg-cover relative overflow-hidden "
-      style={{
-        backgroundImage: "url('/src/assets/OIP-M.png')",
-      }}
+      style={sectionStyle}
+      className={`
+        py-13 px-6 relative overflow-hidden
+        ${
+          !backgroundImage
+            ? " bg-gradient-to-br from-[#FAF9F6] via-[#F8F5EF] to-[#F3EEE3]"
+            : ""
+        }
+      `}
     >
       <div className="w-full  lg:px-16 grid lg:grid-cols-2 gap-12 items-start">
         {/* Left Content */}
@@ -157,7 +121,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="flex flex-row justify-center gap-4">
-              <div>
+              <div className="w-1/2">
                 <label className="block mb-1 text-[#0F172A] font-medium">
                   Phone Number
                 </label>
@@ -171,7 +135,7 @@ const ContactForm = () => {
                 />
               </div>
 
-              <div>
+              <div className="w-1/2">
                 <label className="block mb-1 text-[#0F172A] font-medium">
                   Court
                 </label>

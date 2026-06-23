@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
             <img
-              src="/src/assets/logo.png"
+              src={logo}
               alt="Vidhi Chambers"
               className="h-15 w-auto border border-amber-850 contrast-80 brightness-220"
             />
@@ -61,7 +62,7 @@ const Header = () => {
           {/* CTA */}
           <div className="hidden lg:block">
             <a
-              href="#contact"
+              href="/contact#contact"
               className="
                 px-5 py-2.5
                 rounded-md
