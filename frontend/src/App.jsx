@@ -7,6 +7,7 @@ import OurTeamPage from "./pages/OurTeamPage";
 import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ClientsPage from "./pages/ClientsPage";
 import ContactPage from "./pages/ContactPage";
+import CSRPage from "./pages/CSRPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
         <Route path="/practice-areas" element={<PracticeAreasPage />} />
         <Route path="/clients" element={<ClientsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/csr" element={<CSRPage />} />
       </Routes>
     </>
   );

@@ -1,6 +1,6 @@
 const AboutusHero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#FAF9F6] via-[#F8F5EF] to-[#F3EEE3] py-28">
+    <section className="relative overflow-hidden bg-[#FCFCFC]EEE3] py-28">
       <div className="absolute -right-24 top-0 text-[25rem] text-[#304669]/5 font-bold">
         ⚖
       </div>

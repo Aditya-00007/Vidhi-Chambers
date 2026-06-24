@@ -86,7 +86,7 @@ const TeamSection = () => {
       : teamMembers.filter((member) => member.category === active);
 
   return (
-    <section id="team-grid" className="py-24 bg-[#FAF9F6]">
+    <section id="team-grid" className="py-24 bg-[#FCFCFC]">
       {" "}
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}

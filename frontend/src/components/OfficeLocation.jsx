@@ -2,7 +2,7 @@ import { MapPin, Clock, Phone, Mail, ArrowRight } from "lucide-react";
 
 const OfficeLocation = () => {
   return (
-    <section id="office-location" className="py-24 bg-[#FAF9F6]">
+    <section id="office-location" className="py-24 bg-[#FCFCFC]">
       {" "}
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}

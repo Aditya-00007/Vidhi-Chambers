@@ -27,7 +27,7 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#FAF9F6]">
+    <section className="py-24 bg-[#FCFCFC]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="uppercase tracking-[4px] text-[#D4AF37] font-semibold">

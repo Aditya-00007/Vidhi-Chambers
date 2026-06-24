@@ -48,7 +48,7 @@ const clientTypes = [
 
 const WhoWeServe = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#FCFCFC]">
       {" "}
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">

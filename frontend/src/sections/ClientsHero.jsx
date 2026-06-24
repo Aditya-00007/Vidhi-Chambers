@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ClientsHero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#FAF9F6] via-[#F8F5EF] to-[#F3EEE3] py-28">
+    <section className="relative overflow-hidden bg-[#FCFCFC] py-28">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl" />
 

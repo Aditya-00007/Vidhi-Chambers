@@ -8,6 +8,7 @@ import OfficeLocation from "../components/OfficeLocation";
 import ContactFAQ from "../sections/ContactFAQ";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import InternshipSection from "../sections/InternshipSection";
 
 const ContactPage = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const ContactPage = () => {
       <Header />
       <ContactHero />
       <ContactForm />
+      <InternshipSection />
       <ContactInfoCards />
       <OfficeLocation />
       <ContactFAQ />

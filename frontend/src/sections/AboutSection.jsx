@@ -22,7 +22,7 @@ const AboutSection = () => {
           {/* Left Image */}
           <div className="relative w-fit mx-auto">
             {/* Gold Background Block */}
-            <div className="absolute top-6 left-6 w-full h-full bg-amber-200 rounded-3xl" />
+            <div className="absolute top-6 left-6 w-full h-full bg-[#FCFCFC] rounded-3xl" />
 
             {/* Image */}
             <div className="relative z-10 overflow-hidden rounded-3xl border border-gray-200 bg-amber-200">

@@ -51,11 +51,7 @@ const ContactForm = ({ backgroundImage }) => {
       style={sectionStyle}
       className={`
         py-13 px-6 relative overflow-hidden
-        ${
-          !backgroundImage
-            ? " bg-gradient-to-br from-[#FAF9F6] via-[#F8F5EF] to-[#F3EEE3]"
-            : ""
-        }
+        ${!backgroundImage ? " bg-[#FCFCFC]" : ""}
       `}
     >
       <div className="w-full  lg:px-16 grid lg:grid-cols-2 gap-12 items-start">
@@ -76,13 +72,11 @@ const ContactForm = ({ backgroundImage }) => {
 
           <div className="space-y-4 text-[#000000]">
             <p>
-              <strong>Email:</strong> info@vidhichambers.com
+              <strong>Email:</strong>Vidhichambers@yahoo.co.in
             </p>
             <p>
-              <strong>Phone:</strong> +91 XXXXX XXXXX
-            </p>
-            <p>
-              <strong>Office:</strong> ... India
+              <strong>Office:</strong> House No. 132, MDC Sector 6, Panchkula -
+              134108, Near Community Center, Chandigarh
             </p>
           </div>
         </div>

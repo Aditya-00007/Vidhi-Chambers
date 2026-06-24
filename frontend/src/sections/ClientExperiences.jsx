@@ -7,7 +7,7 @@ const ClientExperiences = () => {
   const [selectedCase, setSelectedCase] = useState(null);
 
   return (
-    <section id="success-stories" className="py-24 bg-[#FAF9F6]">
+    <section id="success-stories" className="py-24 bg-[#FCFCFC]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">
           <span className="uppercase tracking-[4px] text-[#D4AF37] font-semibold">

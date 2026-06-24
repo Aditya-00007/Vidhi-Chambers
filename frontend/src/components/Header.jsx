@@ -10,11 +10,32 @@ const Header = () => {
     { label: "Our Team", href: "/team" },
     { label: "Practice Areas", href: "/practice-areas" },
     { label: "Our Clients", href: "/clients" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "CSR", href: "/csr" },
+    {
+      label: "Contact Us",
+      dropdown: [
+        {
+          label: "Write To Us",
+          path: "/contact#contact",
+        },
+        {
+          label: "Office Location",
+          path: "/contact#office-location",
+        },
+        {
+          label: "Internship",
+          path: "/contact#internship",
+        },
+        {
+          label: "FAQ's",
+          path: "/contact#faq",
+        },
+      ],
+    },
   ];
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-[#e7e7e3] border-b border-[#D4AF37]/20 shadow-lg">
+    <header className=" w-full sticky top-0 z-50 bg-[#e7e7e3] border-b border-[#D4AF37]/20 shadow-lg">
       <div className="w-full  lg:px-16">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
@@ -32,31 +53,87 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="
-                  text-[#5b5f68]
-                  font-medium
-                  transition-all
-                  duration-300
-                  hover:text-[#C19A57]
-                  relative
-                  after:absolute
-                  after:left-0
-                  after:-bottom-1
-                  after:h-px
-                  after:w-0
-                  after:bg-[#D4AF37]
-                  after:transition-all
-                  after:duration-300
-                  hover:after:w-full
-                "
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.dropdown ? (
+                <div key={item.label} className="relative group">
+                  <button
+                    className="
+            text-[#5b5f68]
+            font-medium
+            hover:text-[#C19A57]
+            transition-all
+          "
+                  >
+                    {item.label}
+                  </button>
+
+                  {/* Dropdown */}
+                  <div
+                    className="
+            absolute
+            top-full
+            left-0
+            mt-3
+            w-56
+            bg-white
+            rounded-lg
+            shadow-xl
+            border
+            border-slate-200
+            opacity-0
+            invisible
+            group-hover:opacity-100
+            group-hover:visible
+            transition-all
+            duration-200
+            z-50
+          "
+                  >
+                    {item.dropdown.map((subItem) => (
+                      <a
+                        key={subItem.label}
+                        href={subItem.path}
+                        className="
+                block
+                px-5
+                py-3
+                text-slate-700
+                hover:bg-slate-50
+                hover:text-[#B89B5E]
+                transition
+              "
+                      >
+                        {subItem.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="
+          text-[#5b5f68]
+          font-medium
+          transition-all
+          duration-300
+          hover:text-[#C19A57]
+          relative
+          after:absolute
+          after:left-0
+          after:-bottom-1
+          after:h-px
+          after:w-0
+          after:bg-[#B89B5E]
+          after:transition-all
+          after:duration-300
+          hover:after:w-full
+        "
+                >
+                  {item.label}
+                </a>
+              ),
+            )}
           </nav>
 
           {/* CTA */}

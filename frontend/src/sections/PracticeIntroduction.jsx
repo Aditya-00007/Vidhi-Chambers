@@ -2,7 +2,7 @@ import { Scale, Briefcase, Building2 } from "lucide-react";
 
 const PracticeIntroduction = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#FCFCFC]">
       {" "}
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

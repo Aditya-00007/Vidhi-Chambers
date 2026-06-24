@@ -8,12 +8,14 @@ import FooterCTA from "../sections/FooterCTA";
 import bgImage from "../assets/OIP-M.png";
 import PracticeAreaGrid from "../sections/PracticeAreaGrid";
 import practiceAreas from "../data/practiceAreas";
+import DisclaimerModal from "../components/DisclaimerModal";
 
 const HomePage = () => {
   return (
     <>
       <Header />
       <ContactForm backgroundImage={bgImage} />
+      <DisclaimerModal />
       <PracticeAreaGrid practiceAreas={practiceAreas} />
       <AboutSection />
       <WhyChooseUsSection />
