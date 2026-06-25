@@ -17,7 +17,7 @@ const PracticeIntroduction = () => {
               <span className="block">Expertise Under One Roof</span>
             </h2>
 
-            <div className="w-24 h-1 bg-[#D4AF37] rounded-full mt-8" />
+            <div className="w-24 mx-auto h-1 bg-[#D4AF37] rounded-full mt-8" />
 
             <p className="mt-8 text-slate-600 leading-9 text-lg">
               Legal matters often require specialized expertise. Whether you are

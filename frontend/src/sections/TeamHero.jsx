@@ -31,7 +31,7 @@ const TeamHero = () => {
           </h1>
 
           {/* Description */}
-          <p className="mt-8 text-lg md:text-xl text-slate-600 leading-9 max-w-4xl mx-auto">
+          <p className="mt-8 text-lg md:text-xl text-slate-600 leading-9 max-w-5xl mx-auto">
             Our team brings together experienced advocates, legal consultants,
             and advisors dedicated to providing strategic legal guidance and
             effective representation. With diverse expertise and a shared

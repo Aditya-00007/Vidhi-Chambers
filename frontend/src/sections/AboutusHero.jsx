@@ -1,6 +1,9 @@
 const AboutusHero = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFC]EEE3] py-28">
+    <section
+      id="about"
+      className="relative overflow-hidden bg-[#FCFCFC]EEE3] py-28"
+    >
       <div className="absolute -right-24 top-0 text-[25rem] text-[#304669]/5 font-bold">
         ⚖
       </div>
@@ -16,7 +19,7 @@ const AboutusHero = () => {
             <span className="block text-[#D4AF37]">Since 2011</span>
           </h1>
 
-          <p className="mx-auto max-w-3xl text-lg md:text-xl leading-9 text-slate-600">
+          <p className="mx-auto max-w-4xl text-lg md:text-xl leading-9 text-slate-600">
             Delivering strategic legal solutions with integrity, expertise, and
             unwavering commitment to justice.
           </p>

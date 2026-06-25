@@ -31,7 +31,7 @@ const PracticeAreasHero = () => {
           </h1>
 
           {/* Description */}
-          <p className="mt-8 text-lg md:text-xl text-slate-600 leading-9 max-w-4xl mx-auto">
+          <p className="mt-8 text-lg md:text-xl text-slate-600 leading-9 max-w-5xl mx-auto">
             From litigation and dispute resolution to advisory and consultancy
             services, Vidhi Chambers provides comprehensive legal support
             tailored to the needs of individuals, businesses, and institutions.

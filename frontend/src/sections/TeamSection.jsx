@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TeamCard from "../components/TeamCard";
-import founderImg from "../assets/logo.png";
-import member2 from "../assets/logo.png";
+import founderImg from "../assets/lawyer.webp";
+import member2 from "../assets/lawyer.webp";
 import TeamMemberModal from "../components/TeamMemberModal";
 
 const TeamSection = () => {

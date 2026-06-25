@@ -61,7 +61,7 @@ const ContactHero = () => {
           md:text-xl
           text-slate-600
           leading-9
-          max-w-3xl
+          max-w-5xl
           mx-auto
         "
           >

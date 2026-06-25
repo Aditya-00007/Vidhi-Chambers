@@ -31,7 +31,7 @@ const ClientsHero = () => {
           </h1>
 
           {/* Description */}
-          <p className="mt-8 text-lg md:text-xl text-slate-600 leading-9 max-w-4xl mx-auto">
+          <p className="mt-8 text-lg md:text-xl text-slate-600 leading-9 max-w-5xl mx-auto">
             For over a decade, Vidhi Chambers has assisted individuals,
             families, business owners, NRIs, and institutions across a broad
             spectrum of legal matters. Our commitment to excellence,

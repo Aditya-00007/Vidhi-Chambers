@@ -51,7 +51,7 @@ const ContactForm = ({ backgroundImage }) => {
       style={sectionStyle}
       className={`
         py-13 px-6 relative overflow-hidden
-        ${!backgroundImage ? " bg-[#FCFCFC]" : ""}
+        ${!backgroundImage ? " bg-[#f6f6f5ed]" : ""}
       `}
     >
       <div className="w-full  lg:px-16 grid lg:grid-cols-2 gap-12 items-start">

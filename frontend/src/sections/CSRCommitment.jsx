@@ -2,77 +2,43 @@ import CsrImg from "../assets/CSR.webp";
 
 const CSRCommitment = () => {
   return (
-    <section id="csr-commitment" className="py-24 bg-[#FCFCFC]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-12 items-start">
-          {/* Left Side */}
-
-          <div className="lg:col-span-4">
-            <img
-              src={CsrImg}
-              alt="CSR"
-              className="object-contain h-1/4 w-auto mx-auto mb-5 filter brightness-106 contrast-100"
-            />
-            <span
-              className="
-                uppercase
-                tracking-[5px]
-                text-[#B89B5E]
-                text-sm
-                font-medium
-              "
-            >
-              Our Commitment
+    <section id="csr" className="py-24 bg-[#FCFCFC]">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className=" items-center">
+          <div>
+            <span className="uppercase tracking-[5px] text-[#B89B5E] text-sm font-medium">
+              Corporate Social Responsibility
             </span>
 
-            <h2
-              className="
-                mt-6
-                font-cormorant
-                text-5xl
-                font-semibold
-                text-[#1F3657]
-                leading-tight
-              "
-            >
-              Contributing
+            <h2 className="mt-5 font-cormorant text-5xl font-semibold text-[#1F3657] leading-tight">
+              Contributing Beyond
               <br />
-              Beyond The
-              <br />
-              Courtroom
+              The Courtroom
             </h2>
-          </div>
 
-          {/* Divider */}
+            <div className="w-28 h-0.5 bg-[#B89B5E] mt-8 mb-8 mx-auto" />
 
-          <div className="hidden lg:block lg:col-span-1">
-            <div className="w-px h-full bg-slate-200 mx-auto" />
-          </div>
-
-          {/* Right Side */}
-
-          <div className="lg:col-span-7">
-            <div className="space-y-8 text-slate-600 leading-9 text-lg">
+            <div className="space-y-6 text-slate-600 text-lg leading-9">
               <p>
-                We believe that our professionals should contribute in their own
-                manner to the upliftment of society and help improve the quality
-                of education and healthcare through various community
-                development programmes supported by the Firm.
+                At Vidhi Chambers, we believe that the responsibility of legal
+                professionals extends beyond the courtroom. We are committed to
+                supporting initiatives that create meaningful and lasting social
+                impact.
               </p>
 
               <p>
-                We lend support to individuals and philanthropic organisations
-                working towards reducing poverty, illiteracy, and disease, while
-                promoting awareness of education, healthcare, human rights, and
-                environmental issues.
+                Through community welfare programmes, educational initiatives,
+                healthcare awareness, and collaborations with philanthropic
+                organisations, we strive to contribute towards a more informed,
+                equitable, and empowered society.
               </p>
 
               <p>
-                Our professionals and staff voluntarily contribute their time,
-                skills, and resources in support of community welfare
-                initiatives, social outreach programmes, and activities focused
-                on education, healthcare, women empowerment, and broader social
-                development.
+                Our professionals voluntarily dedicate their time, knowledge,
+                and resources to causes focused on education, healthcare, women
+                empowerment, environmental awareness, and community
+                development—reflecting our commitment to serving society with
+                integrity and compassion.
               </p>
             </div>
           </div>

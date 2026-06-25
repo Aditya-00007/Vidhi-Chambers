@@ -1,4 +1,5 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/banner.jpeg";
+
 const TeamIntroduction = () => {
   return (
     <section className="py-24 flex flex-row gap-3 bg-white">
@@ -32,7 +33,10 @@ const TeamIntroduction = () => {
           </p>
         </div>
       </div>
-      <div className="relative w-fit mx-auto mr-8">
+
+      {/* Image Section */}
+
+      <div className="relative w-fit mx-auto mr-0 lg:mr-8 mt-12 lg:mt-0 px-6 lg:px-0">
         {/* Gold Background Block */}
         <div className="absolute top-6 left-4 w-full h-full bg-amber-200 rounded-3xl" />
 
@@ -41,13 +45,13 @@ const TeamIntroduction = () => {
           <img
             src={logo}
             alt="Our Team"
-            className="w-full max-w-md object-cover"
+            className="w-70 sm:w-85 md:w-95 lg:w-full max-w-md object-cover"
           />
         </div>
 
         {/* Experience Badge */}
-        <div className="absolute -bottom-6 -left-6 z-20 bg-amber-200 text-blue-950 px-6 py-4 rounded-2xl shadow-lg">
-          <div className="text-3xl font-bold">{15}</div>
+        <div className="absolute bottom-4 left-4 sm:-bottom-6 sm:-left-6 z-20 bg-amber-200 text-blue-950 px-5 py-3 sm:px-6 sm:py-4 rounded-2xl shadow-lg">
+          <div className="text-3xl font-bold">15</div>
 
           <div className="text-sm">Years Experience</div>
         </div>

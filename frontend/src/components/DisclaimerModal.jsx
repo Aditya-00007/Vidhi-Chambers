@@ -82,66 +82,50 @@ const DisclaimerModal = () => {
 
         {/* Content */}
 
-        <div className="p-8 md:p-10">
-          <div
-            className="
-              text-slate-600
-              leading-8
-              space-y-5
-            "
-          >
+        <div className="p-2 md:p-4">
+          <div className="space-y-4 text-slate-600 leading-8">
             <p>
-              In compliance with the rules of the Bar Council of India, this
-              website of Vidhi Chambers ( the “Firm” ) is meant solely for
-              information about the Firm, its practice areas, advocates and
-              solicitors and not for the purpose of advertising, soliciting work
-              or inducement of any sort by the Firm or any of its members.
+              Lawyers and law offices are not allowed to solicit clients or
+              advertise, according to the{" "}
+              <strong>Bar Council of India Guidelines.</strong>
             </p>
 
-            <p>
-              By clicking <strong>"I Agree"</strong>, you confirm that you have
-              read, understood, and accepted the above disclaimer and wish to
-              proceed.
-            </p>
+            <div className="border-l-4 border-[#D4AF37] bg-[#FCFAF5] px-5 py-5 rounded-r-lg">
+              <p className="text-slate-700 leading-8">
+                By clicking <strong>"I Agree"</strong>, you acknowledge and
+                confirm that:
+              </p>
+
+              <ul className="mt-4 list-disc pl-6 space-y-3 marker:text-[#D4AF37]">
+                <li>
+                  You are independently looking for information about{" "}
+                  <strong>Vidhi Chambers (VC)</strong>.
+                </li>
+
+                <li>
+                  No advertisements, personal communications, solicitations,
+                  invitations, or other forms of inducement of any kind have
+                  been made by or on behalf of{" "}
+                  <strong>Vidhi Chambers (VC)</strong> or any of its members to
+                  solicit work through this website.
+                </li>
+              </ul>
+            </div>
           </div>
+
           {/* Buttons */}
 
-          <div
-            className="
-              mt-10
-              flex flex-col sm:flex-row
-              justify-end
-              gap-4
-            "
-          >
+          <div className="mt-6 flex flex-col sm:flex-row justify-end gap-4">
             <button
               onClick={handleExit}
-              className="
-                px-6 py-3
-                rounded-xl
-                border
-                border-slate-300
-                text-slate-600
-                hover:bg-slate-100
-                cursor-pointer
-                transition
-              "
+              className="px-6 py-3 rounded-xl border border-slate-300 text-slate-600 hover:bg-slate-100 transition cursor-pointer"
             >
               Exit Website
             </button>
 
             <button
               onClick={handleAccept}
-              className="
-              cursor-pointer
-                px-8 py-3
-                rounded-xl
-                bg-[#D4AF37]
-                text-[#0F172A]
-                font-semibold
-                hover:brightness-95
-                transition
-              "
+              className="px-8 py-3 rounded-xl bg-[#D4AF37] text-[#0F172A] font-semibold hover:brightness-95 transition cursor-pointer"
             >
               I Agree
             </button>

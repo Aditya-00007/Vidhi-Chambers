@@ -1,16 +1,31 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "../assets/newlogo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "About Us", href: "/about" },
+    {
+      label: "About Us",
+      dropdown: [
+        {
+          label: "About us",
+          path: "/about#about",
+        },
+        {
+          label: "CSR",
+          path: "/about#csr",
+        },
+        {
+          label: "Core Values",
+          path: "/about#values",
+        },
+      ],
+    },
     { label: "Our Team", href: "/team" },
     { label: "Practice Areas", href: "/practice-areas" },
     { label: "Our Clients", href: "/clients" },
-    { label: "CSR", href: "/csr" },
     {
       label: "Contact Us",
       dropdown: [
@@ -35,7 +50,7 @@ const Header = () => {
   ];
 
   return (
-    <header className=" w-full sticky top-0 z-50 bg-[#e7e7e3] border-b border-[#D4AF37]/20 shadow-lg">
+    <header className=" w-full sticky top-0 z-50 bg-[#f6f6f5] border-b border-[#D4AF37]/20 shadow-lg">
       <div className="w-full  lg:px-16">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
@@ -43,7 +58,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Vidhi Chambers"
-              className="h-15 w-auto border border-amber-850 contrast-80 brightness-220"
+              className="h-15 w-auto  contrast-120 brightness-90"
             />
             <div className="flex flex-col items-center text-black font-bold font-serif text-xl">
               <p>Vidhi</p>
