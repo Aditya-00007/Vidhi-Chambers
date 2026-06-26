@@ -3,12 +3,12 @@ const CSRCommitment = () => {
     <section id="csr" className="py-24 bg-[#FCFCFC]">
       <div className="max-w-5xl mx-auto px-6">
         <div className=" items-center">
-          <div>
-            <span className="uppercase tracking-[5px] text-[#B89B5E] text-sm font-medium">
+          <div className="text-center">
+            <span className="uppercase tracking-[5px] text-[#B89B5E] text-sm font-medium ">
               Corporate Social Responsibility
             </span>
 
-            <h2 className="mt-5 font-cormorant text-5xl font-semibold text-[#1F3657] leading-tight">
+            <h2 className="mt-5 font-cormorant text-5xl font-semibold text-[#1F3657] leading-tight ">
               Contributing Beyond
               <br />
               The Courtroom

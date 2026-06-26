@@ -39,7 +39,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-[#D4AF37]/20 bg-[#FAF9F6]/95 shadow-sm backdrop-blur">
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="flex min-h-18 items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 sm:gap-3" onClick={closeMenu}>
+          <Link
+            to="/"
+            className="flex items-center gap-2 sm:gap-3"
+            onClick={closeMenu}
+          >
             <img
               src={logo}
               alt="Vidhi Chambers"
@@ -51,7 +55,10 @@ const Header = () => {
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary navigation">
+          <nav
+            className="hidden items-center gap-7 lg:flex"
+            aria-label="Primary navigation"
+          >
             {navItems.map((item) =>
               item.dropdown ? (
                 <div key={item.label} className="group relative">
@@ -105,7 +112,9 @@ const Header = () => {
             onClick={() => setIsOpen((current) => !current)}
             className="rounded-lg p-2 text-[#304669] lg:hidden"
             aria-expanded={isOpen}
-            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              isOpen ? "Close navigation menu" : "Open navigation menu"
+            }
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>

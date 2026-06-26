@@ -74,7 +74,7 @@ const InternshipSection = () => {
               possible to the working practices of the firm during your
               internship. We aim to ensure you have a high-level of individual
               attention and good quality work. There are a limited number of
-              internship positions available at Vaish Associates. Our preference
+              internship positions available at Vidhi Chambers. Our preference
               is for students who are in the final year of their LLB or LLM (or
               who are finishing their penultimate year of study).
             </p>
