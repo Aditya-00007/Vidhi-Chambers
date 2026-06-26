@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header";
 import FooterCTA from "../sections/FooterCTA";
 import PracticeAreasHero from "../sections/PracticeAreasHero";

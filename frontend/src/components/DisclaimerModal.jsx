@@ -2,22 +2,17 @@ import { useEffect, useState } from "react";
 import { ShieldAlert } from "lucide-react";
 
 const DisclaimerModal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(
+    () => !localStorage.getItem("vidhi-disclaimer-accepted"),
+  );
 
   useEffect(() => {
-    const accepted = localStorage.getItem("vidhi-disclaimer-accepted");
-
-    if (!accepted) {
-      setIsOpen(true);
-
-      // Prevent scrolling
-      document.body.style.overflow = "hidden";
-    }
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
 
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, []);
+  }, [isOpen]);
 
   const handleAccept = () => {
     localStorage.setItem("vidhi-disclaimer-accepted", "true");

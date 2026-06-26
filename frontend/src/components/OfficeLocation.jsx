@@ -1,4 +1,5 @@
 import { MapPin, Clock, Phone, Mail, ArrowRight } from "lucide-react";
+import { siteInfo } from "../data/siteInfo";
 
 const OfficeLocation = () => {
   return (
@@ -55,8 +56,7 @@ const OfficeLocation = () => {
                   </h3>
 
                   <p className="mt-2 text-slate-600 leading-7">
-                    House No. 132, MDC Sector 6, Panchkula - 134108, Near
-                    Community Center, Chandigarh
+                    {siteInfo.address}
                   </p>
                   <a
                     href="https://maps.google.com/?q=House No. 132 MDC Sector 6 Panchkula"
@@ -124,7 +124,12 @@ const OfficeLocation = () => {
                     Phone
                   </h3>
 
-                  <p className="mt-2 text-slate-600">+91 XXXXX XXXXX</p>
+                  <a
+                    className="mt-2 inline-block text-slate-600 hover:text-[#D4AF37]"
+                    href={siteInfo.phoneHref}
+                  >
+                    {siteInfo.phoneDisplay}
+                  </a>
                 </div>
               </div>
 
@@ -148,7 +153,12 @@ const OfficeLocation = () => {
                     Email
                   </h3>
 
-                  <p className="mt-2 text-slate-600">info@vidhichambers.com</p>
+                  <a
+                    className="mt-2 inline-block text-slate-600 hover:text-[#D4AF37]"
+                    href={`mailto:${siteInfo.email}`}
+                  >
+                    {siteInfo.email}
+                  </a>
                 </div>
               </div>
             </div>

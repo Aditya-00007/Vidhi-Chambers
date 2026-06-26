@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import courts from "../data/courts";
+import { siteInfo } from "../data/siteInfo";
 
 const ContactForm = ({ backgroundImage }) => {
   const [formData, setFormData] = useState({
@@ -50,18 +51,18 @@ const ContactForm = ({ backgroundImage }) => {
       id="contact"
       style={sectionStyle}
       className={`
-        py-13 px-6 relative overflow-hidden
-        ${!backgroundImage ? " bg-[#f6f6f5ed]" : ""}
+        relative overflow-hidden px-5 py-16 sm:px-6 md:py-20
+        ${!backgroundImage ? " bg-[#FAF9F6]" : ""}
       `}
     >
-      <div className="w-full  lg:px-16 grid lg:grid-cols-2 gap-12 items-start">
+      <div className="mx-auto grid w-full max-w-7xl items-start gap-10 lg:grid-cols-2 lg:gap-12">
         {/* Left Content */}
-        <div className="bg-white/50 backdrop-blur-xs  rounded-3xl p-8 shadow-lg my-4 inset-0 relative z-10 py-6 tracking-[2.4px]">
-          <p className="text-blue-900 uppercase  text-sm font-bold  mb-8">
+        <div className="relative z-10 my-4 rounded-2xl bg-white/80 p-6 shadow-lg backdrop-blur-sm sm:p-8">
+          <p className="mb-5 text-sm font-bold uppercase tracking-[3px] text-[#D4AF37]">
             Contact Us
           </p>
 
-          <h2 className="text-4xl text-blue-950 md:text-5xl font-bold mb-6">
+          <h2 className="mb-6 text-3xl font-bold text-[#304669] sm:text-4xl md:text-5xl">
             Let's Discuss Your Legal Requirements
           </h2>
 
@@ -72,20 +73,20 @@ const ContactForm = ({ backgroundImage }) => {
 
           <div className="space-y-4 text-[#000000]">
             <p>
-              <strong>Email:</strong>Vidhichambers@yahoo.co.in
+              <strong>Email:</strong>{" "}
+              <a href={`mailto:${siteInfo.email}`}>{siteInfo.email}</a>
             </p>
             <p>
-              <strong>Office:</strong> House No. 132, MDC Sector 6, Panchkula -
-              134108, Near Community Center, Chandigarh
+              <strong>Office:</strong> {siteInfo.address}
             </p>
           </div>
         </div>
 
         {/* Form */}
-        <div className="bg-white p-4 rounded-xl shadow-lg border border-gray-200">
+        <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-lg sm:p-7">
           <form onSubmit={handleSubmit} className="space-y-5">
-            <div className="flex flex-row justify-center gap-4">
-              <div>
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <div className="w-full">
                 <label className="block mb-1 text-[#0F172A] font-medium">
                   Full Name
                 </label>
@@ -95,11 +96,11 @@ const ContactForm = ({ backgroundImage }) => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-1 focus:outline-none focus:border-[#D4AF37]"
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
                   placeholder="Enter your name"
                 />
               </div>
-              <div>
+              <div className="w-full">
                 <label className="block mb-1 text-[#0F172A] font-medium">
                   Email
                 </label>
@@ -109,13 +110,13 @@ const ContactForm = ({ backgroundImage }) => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-1 focus:outline-none focus:border-[#D4AF37]"
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
                   placeholder="Enter your email"
                 />
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-4">
-              <div className="w-1/2">
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <div className="w-full">
                 <label className="block mb-1 text-[#0F172A] font-medium">
                   Phone Number
                 </label>
@@ -124,12 +125,12 @@ const ContactForm = ({ backgroundImage }) => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-1 focus:outline-none focus:border-[#D4AF37]"
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
                   placeholder="Enter your phone number"
                 />
               </div>
 
-              <div className="w-1/2">
+              <div className="w-full">
                 <label className="block mb-1 text-[#0F172A] font-medium">
                   Court
                 </label>
@@ -144,7 +145,7 @@ const ContactForm = ({ backgroundImage }) => {
                   border-gray-300
                   rounded-lg
                   px-4
-                  py-1
+                  py-3
                   focus:outline-none
                   focus:border-[#D4AF37]
                 "
@@ -169,7 +170,7 @@ const ContactForm = ({ backgroundImage }) => {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-1 focus:outline-none focus:border-[#D4AF37]"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-[#D4AF37] focus:outline-none"
                 placeholder="Tell us about your legal matter..."
               />
             </div>
@@ -181,7 +182,7 @@ const ContactForm = ({ backgroundImage }) => {
                 w-full
                 bg-[#0F172A]
                 text-[#FAF9F6]
-                py-1
+                py-3
                 rounded-lg
                 font-semibold
                 hover:bg-[#1E293B]

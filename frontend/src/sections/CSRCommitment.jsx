@@ -1,5 +1,3 @@
-import CsrImg from "../assets/CSR.webp";
-
 const CSRCommitment = () => {
   return (
     <section id="csr" className="py-24 bg-[#FCFCFC]">

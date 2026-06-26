@@ -56,13 +56,11 @@ const PracticeAreaGrid = ({ practiceAreas }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
           {filteredAreas.map((area) => (
-            <div
+            <PracticeAreaCard
               key={area.id}
+              area={area}
               onClick={() => setSelectedArea(area)}
-              className="cursor-pointer"
-            >
-              <PracticeAreaCard area={area} />
-            </div>
+            />
           ))}
         </div>
       </div>

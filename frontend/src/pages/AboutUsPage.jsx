@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header";
 import AboutusHero from "../sections/AboutusHero";
 import FounderMessage from "../components/FounderMessage";

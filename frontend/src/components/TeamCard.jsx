@@ -2,15 +2,16 @@ import { ArrowRight } from "lucide-react";
 
 const TeamCard = ({ member, onClick }) => {
   return (
-    <div
+    <button
+      type="button"
       onClick={onClick}
       className="
         bg-white
-        rounded-3xl
+        h-full w-full rounded-2xl text-left
         overflow-hidden
         shadow-lg
         cursor-pointer
-        hover:-translate-y-2
+        hover:-translate-y-1
         transition-all
         duration-300
         group
@@ -35,7 +36,7 @@ const TeamCard = ({ member, onClick }) => {
 
       {/* Content */}
 
-      <div className="p-2">
+      <div className="p-6">
         <h3 className="mt-0 text-xl font-bold text-[#304669]">{member.name}</h3>
 
         <p className="text-slate-700 mt-1">{member.designation}</p>
@@ -67,7 +68,7 @@ const TeamCard = ({ member, onClick }) => {
           />
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

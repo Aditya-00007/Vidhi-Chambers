@@ -2,7 +2,7 @@ const AboutusHero = () => {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#FCFCFC]EEE3] py-28"
+      className="relative overflow-hidden bg-[#FCFCFC] py-20 md:py-24 lg:py-28"
     >
       <div className="absolute -right-24 top-0 text-[25rem] text-[#304669]/5 font-bold">
         ⚖
@@ -14,7 +14,7 @@ const AboutusHero = () => {
             About Vidhi Chambers
           </p>
 
-          <h1 className="mb-6 text-5xl md:text-7xl font-bold text-[#304669] leading-tight">
+          <h1 className="mb-6 text-4xl font-bold leading-tight text-[#304669] sm:text-5xl md:text-7xl">
             Trusted Legal Counsel
             <span className="block text-[#D4AF37]">Since 2011</span>
           </h1>
@@ -33,14 +33,20 @@ const AboutusHero = () => {
             spectrum of legal matters.
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <button className="rounded-xl bg-[#D4AF37] px-8 py-4 font-semibold text-[#0F172A] hover:scale-105 transition">
-              <a href="/contact#contact">Schedule Consultation</a>
-            </button>
+          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
+            <a
+              href="/contact#contact"
+              className="rounded-xl bg-[#D4AF37] px-8 py-4 font-semibold text-[#0F172A] transition hover:brightness-95"
+            >
+              Schedule Consultation
+            </a>
 
-            <button className="rounded-xl border-2 border-[#304669] px-8 py-4 font-semibold text-[#304669] hover:bg-[#304669] hover:text-white transition">
-              <a href="practice-areas">Explore Practice Areas</a>
-            </button>
+            <a
+              href="/practice-areas"
+              className="rounded-xl border-2 border-[#304669] px-8 py-4 font-semibold text-[#304669] transition hover:bg-[#304669] hover:text-white"
+            >
+              Explore Practice Areas
+            </a>
           </div>
         </div>
 

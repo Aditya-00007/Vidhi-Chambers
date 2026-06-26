@@ -2,9 +2,10 @@ import { ArrowRight } from "lucide-react";
 
 const PracticeAreaCard = ({ area, onClick }) => {
   return (
-    <div
+    <button
+      type="button"
       onClick={onClick}
-      className="group cursor-pointer rounded-3xl border border-gray-200 bg-white overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-(--accent)"
+      className="group h-full w-full cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/60 hover:shadow-xl"
     >
       {/* Image */}
       <div className="flex items-center justify-center h-28 bg-gray-50">
@@ -17,9 +18,9 @@ const PracticeAreaCard = ({ area, onClick }) => {
 
       {/* Content */}
       <div className="p-6 text-center">
-        <h3 className="text-xl font-semibold mb-4">{area.title}</h3>
+        <h3 className="mb-4 text-xl font-semibold text-[#304669]">{area.title}</h3>
 
-        <div className="inline-flex items-center gap-2 font-medium text-(--accent)">
+        <div className="inline-flex items-center gap-2 font-medium text-[#B08B18]">
           <span>Learn More</span>
 
           <ArrowRight
@@ -28,7 +29,7 @@ const PracticeAreaCard = ({ area, onClick }) => {
           />
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

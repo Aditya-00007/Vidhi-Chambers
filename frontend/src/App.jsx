@@ -1,5 +1,3 @@
-import { useState } from "react";
-import "./App.css";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
 import AboutUSPage from "./pages/AboutUsPage";
@@ -9,19 +7,15 @@ import ClientsPage from "./pages/ClientsPage";
 import ContactPage from "./pages/ContactPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUSPage />} />
-        <Route path="/team" element={<OurTeamPage />} />
-        <Route path="/practice-areas" element={<PracticeAreasPage />} />
-        <Route path="/clients" element={<ClientsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutUSPage />} />
+      <Route path="/team" element={<OurTeamPage />} />
+      <Route path="/practice-areas" element={<PracticeAreasPage />} />
+      <Route path="/clients" element={<ClientsPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
   );
 }
 

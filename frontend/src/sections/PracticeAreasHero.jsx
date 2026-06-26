@@ -1,9 +1,9 @@
-import { Scale, Search, ArrowRight } from "lucide-react";
+import { Scale, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PracticeAreasHero = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFC] py-28">
+    <section className="relative overflow-hidden bg-[#FCFCFC] py-20 md:py-24 lg:py-28">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl" />
 
@@ -25,7 +25,7 @@ const PracticeAreasHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mt-8 text-5xl md:text-7xl font-bold text-[#304669] leading-tight">
+          <h1 className="mt-8 text-4xl font-bold leading-tight text-[#304669] sm:text-5xl md:text-7xl">
             Legal Expertise Across
             <span className="block text-[#D4AF37]">Diverse Practice Areas</span>
           </h1>

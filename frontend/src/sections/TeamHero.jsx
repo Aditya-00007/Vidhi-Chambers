@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TeamHero = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFC] py-28">
+    <section className="relative overflow-hidden bg-[#FCFCFC] py-20 md:py-24 lg:py-28">
       {/* Decorative Background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl" />
 
@@ -25,7 +25,7 @@ const TeamHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mt-8 text-5xl md:text-7xl font-bold text-[#304669] leading-tight">
+          <h1 className="mt-8 text-4xl font-bold leading-tight text-[#304669] sm:text-5xl md:text-7xl">
             Meet The Legal Professionals
             <span className="block text-[#D4AF37]">Behind Vidhi Chambers</span>
           </h1>
@@ -40,7 +40,7 @@ const TeamHero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
+          <div className="mt-12 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#0F172A] px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg"

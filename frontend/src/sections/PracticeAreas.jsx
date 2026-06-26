@@ -1,14 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import PracticeAreaCard from "../components/PracticeAreaCard";
-import crl from "../assets/CRIMINAL-LITIGATION-1.png";
-import cvl from "../assets/civil-law.png";
-import mat from "../assets/MATRIMONIAL-LITIGATION.png";
-import nri from "../assets/NRI_LEGAL_SERVICES.png";
-import corp from "../assets/CORPORATE.png";
-import intl from "../assets/INTELLECTUAL-PROPERTY-RIGHTS.png";
-import res from "../assets/REAL-ESTATE.png";
-import arbt from "../assets/ARBITRATION_AND_MEDIATION.png";
-import PracticeAreaModal from "../sections/PracticeAreaModal";
 import practiceAreas from "../data/practiceAreas";
 
 const PracticeAreas = () => {
@@ -21,16 +12,11 @@ const PracticeAreas = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-8">
           {practiceAreas.map((area) => (
-            <div
+            <PracticeAreaCard
               key={area.id}
+              area={area}
               onClick={() => navigate(`/practice-areas/${area.slug}`)}
-            >
-              <PracticeAreaCard
-                key={area.id}
-                area={area}
-                onClick={() => navigate(`/practice-areas/${area.slug}`)}
-              />
-            </div>
+            />
           ))}
         </div>
 

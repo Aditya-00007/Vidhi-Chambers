@@ -1,4 +1,4 @@
-import { X, Scale, Briefcase, ArrowRight } from "lucide-react";
+import { X, Scale, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PracticeAreaModal = ({ area, onClose }) => {

@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, ArrowRight } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
 
 const InternshipSection = () => {
   return (

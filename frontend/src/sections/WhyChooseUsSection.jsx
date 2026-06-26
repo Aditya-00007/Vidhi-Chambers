@@ -5,7 +5,6 @@ import tm from "../assets/team.png";
 import uni from "../assets/university.png";
 
 const WhyChooseUsSection = () => {
-  const images = "/src/assets/logo.png";
   const whyChooseUsData = [
     {
       id: 1,

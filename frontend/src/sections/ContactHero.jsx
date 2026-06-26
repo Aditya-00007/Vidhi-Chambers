@@ -1,8 +1,9 @@
-import { Phone, Mail, ArrowRight } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
+import { siteInfo } from "../data/siteInfo";
 
 const ContactHero = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFC] py-24">
+    <section className="relative overflow-hidden bg-[#FCFCFC] py-20 md:py-24">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl" />
 
@@ -42,7 +43,8 @@ const ContactHero = () => {
           <h1
             className="
           mt-8
-          text-5xl
+          text-4xl
+          sm:text-5xl
           md:text-7xl
           font-bold
           text-[#304669]
@@ -71,11 +73,11 @@ const ContactHero = () => {
           </p>
 
           {/* Quick Action Buttons */}
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
+          <div className="mt-12 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
             <a
-              href="tel:+91XXXXXXXXXX"
+              href={siteInfo.phoneHref}
               className="
-            inline-flex
+            inline-flex justify-center
             items-center
             gap-2
             bg-[#D4AF37]
@@ -94,9 +96,9 @@ const ContactHero = () => {
             </a>
 
             <a
-              href="mailto:info@vidhichambers.com"
+              href={`mailto:${siteInfo.email}`}
               className="
-            inline-flex
+            inline-flex justify-center
             items-center
             gap-2
             border-2
@@ -121,7 +123,7 @@ const ContactHero = () => {
           <div
             className="
           mt-12
-          inline-flex
+          flex flex-wrap justify-center
           items-center
           gap-3
           text-slate-500

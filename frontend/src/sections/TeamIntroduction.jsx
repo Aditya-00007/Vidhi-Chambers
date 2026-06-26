@@ -2,7 +2,7 @@ import logo from "../assets/banner.jpeg";
 
 const TeamIntroduction = () => {
   return (
-    <section className="py-24 flex flex-row gap-3 bg-white">
+    <section className="flex flex-col gap-10 bg-white py-16 md:py-20 lg:flex-row lg:items-center lg:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto">
           <span className="uppercase tracking-[4px] text-[#D4AF37] font-semibold">
@@ -36,7 +36,7 @@ const TeamIntroduction = () => {
 
       {/* Image Section */}
 
-      <div className="relative w-fit mx-auto mr-0 lg:mr-8 mt-12 lg:mt-0 px-6 lg:px-0">
+      <div className="relative mx-auto mt-4 w-fit px-6 lg:mr-8 lg:mt-0 lg:px-0">
         {/* Gold Background Block */}
         <div className="absolute top-6 left-4 w-full h-full bg-amber-200 rounded-3xl" />
 

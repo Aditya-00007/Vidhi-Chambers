@@ -3,10 +3,11 @@ import { FaFacebookSquare, FaPhoneSquareAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { siteInfo } from "../data/siteInfo";
 
 const FooterCTA = () => {
   return (
-    <footer className="relative mt-32">
+    <footer className="relative mt-20 md:mt-28 lg:mt-32">
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="bg-[#304669] rounded-3xl px-8 md:px-16 py-14 shadow-2xl">
@@ -37,7 +38,7 @@ const FooterCTA = () => {
               </Link>
 
               <a
-                href="tel:+91XXXXXXXXXX"
+                href={siteInfo.phoneHref}
                 className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-[#304669] transition duration-300"
               >
                 Call Now
@@ -96,7 +97,7 @@ const FooterCTA = () => {
 
                 <li>
                   <Link
-                    to="/people"
+                  to="/team"
                     className="text-slate-400 hover:text-[#D4AF37]"
                   >
                     Our People
@@ -121,12 +122,22 @@ const FooterCTA = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <FaPhoneSquareAlt size={18} className="text-[#D4AF37]" />
-                  <span className="text-slate-400">+91 XXXXX XXXXX</span>
+                  <a
+                    href={siteInfo.phoneHref}
+                    className="text-slate-400 hover:text-[#D4AF37]"
+                  >
+                    {siteInfo.phoneDisplay}
+                  </a>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <MdEmail size={18} className="text-[#D4AF37]" />
-                  <span className="text-slate-400">info@vidhichambers.com</span>
+                  <a
+                    href={`mailto:${siteInfo.email}`}
+                    className="text-slate-400 hover:text-[#D4AF37]"
+                  >
+                    {siteInfo.email}
+                  </a>
                 </div>
 
                 <Link
