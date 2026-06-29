@@ -3,6 +3,7 @@ import courts from "../data/courts";
 import { siteInfo } from "../data/siteInfo";
 
 const ContactForm = ({ backgroundImage }) => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,24 +19,41 @@ const ContactForm = ({ backgroundImage }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
+    setLoading(true);
 
-    // Add API call here
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    alert(
-      "Thank you for contacting Vidhi Chambers. We will get back to you shortly.",
-    );
+      const data = await response.json();
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      courts: "",
-      message: "",
-    });
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong.");
+      }
+
+      alert(data.message);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        courts: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const sectionStyle = backgroundImage
@@ -62,11 +80,11 @@ const ContactForm = ({ backgroundImage }) => {
             Contact Us
           </p>
 
-          <h2 className="mb-6 text-3xl font-bold text-[#304669] sm:text-4xl md:text-5xl">
+          <h2 className="mb-6 py-3 text-3xl font-bold text-[#304669] sm:text-4xl md:text-5xl">
             Let's Discuss Your Legal Requirements
           </h2>
 
-          <p className="text-black/80 text-lg leading-relaxed mb-8">
+          <p className="text-black/80 text-lg leading-relaxed mb-8 py-2">
             Whether you need legal representation, strategic advice, or
             assistance with a specific matter, our team is ready to assist you.
           </p>
@@ -177,19 +195,22 @@ const ContactForm = ({ backgroundImage }) => {
 
             <button
               type="submit"
+              disabled={loading}
               className="
-                cursor-pointer
-                w-full
-                bg-[#0F172A]
-                text-[#FAF9F6]
-                py-3
-                rounded-lg
-                font-semibold
-                hover:bg-[#1E293B]
-                transition
-              "
+    w-full
+    bg-[#0F172A]
+    text-[#FAF9F6]
+    py-3
+    rounded-lg
+    font-semibold
+    transition
+    cursor-pointer
+    hover:bg-[#1E293B]
+    disabled:opacity-60
+    disabled:cursor-not-allowed
+  "
             >
-              Submit Inquiry
+              {loading ? "Sending..." : "Submit Inquiry"}
             </button>
           </form>
         </div>

@@ -1,14 +1,23 @@
 import { useState } from "react";
 import PracticeAreaCard from "../components/PracticeAreaCard";
 import PracticeAreaModal from "./PracticeAreaModal";
+import { ArrowDown, ArrowUp } from "lucide-react";
 
 const PracticeAreaGrid = ({ practiceAreas }) => {
   const [selectedArea, setSelectedArea] = useState(null);
   const [search, setSearch] = useState("");
+  const [showAll, setShowAll] = useState(false);
 
   const filteredAreas = practiceAreas.filter((area) =>
     area.title.toLowerCase().includes(search.toLowerCase()),
   );
+
+  const displayedAreas =
+    search.trim() !== ""
+      ? filteredAreas
+      : showAll
+        ? filteredAreas
+        : filteredAreas.slice(0, 8);
 
   return (
     <section id="practice-grid" className="py-24 bg-[#FCFCFC]">
@@ -55,7 +64,7 @@ const PracticeAreaGrid = ({ practiceAreas }) => {
         {/* Grid */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
-          {filteredAreas.map((area) => (
+          {displayedAreas.map((area) => (
             <PracticeAreaCard
               key={area.id}
               area={area}
@@ -64,6 +73,24 @@ const PracticeAreaGrid = ({ practiceAreas }) => {
           ))}
         </div>
       </div>
+      {search.trim() === "" && filteredAreas.length > 8 && (
+        <div className="mt-14 flex justify-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-8 py-3 rounded-full bg-[#304669] text-white font-medium hover:bg-[#24364f] transition duration-300"
+          >
+            {showAll ? (
+              <>
+                Show Less <ArrowUp className="inline ml-2 w-5 h-5" />
+              </>
+            ) : (
+              <>
+                Show More <ArrowDown className="inline ml-2 w-5 h-5" />
+              </>
+            )}
+          </button>
+        </div>
+      )}
       {/* Modal */}
       {selectedArea && (
         <PracticeAreaModal

@@ -39,9 +39,9 @@ shadow-2xl
           {" "}
           <X size={20} />{" "}
         </button>
-        <div className="grid lg:grid-cols-2">
+        <div className="grid lg:grid-cols-4">
           {/* Image */}
-          <div className="relative bg-[#FAF9F6]">
+          {/* <div className="relative bg-[#FAF9F6]">
             <img
               src={area.image}
               alt={area.title}
@@ -52,10 +52,10 @@ shadow-2xl
             
           "
             />
-          </div>
+          </div> */}
 
           {/* Content */}
-          <div className="p-8 lg:p-10">
+          <div className="p-8 lg:p-10 col-span-4">
             <span
               className="
             inline-flex
@@ -80,9 +80,21 @@ shadow-2xl
             text-4xl
             font-bold
             text-[#304669]
+          
           "
             >
-              {area.title}
+              {area.title}{" "}
+              <img
+                src={area.image}
+                alt={area.title}
+                className="
+            w-20
+            h-20
+            object-cover
+            inline
+            mx-3
+          "
+              />
             </h2>
 
             <div

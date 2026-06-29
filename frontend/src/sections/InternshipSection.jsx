@@ -49,6 +49,7 @@ const InternshipSection = () => {
                 text-5xl
                 font-semibold
                 text-[#1F3657]
+                pb-4
               "
             >
               Begin Your Legal Journey

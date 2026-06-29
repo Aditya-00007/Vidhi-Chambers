@@ -8,17 +8,19 @@ const PracticeAreaCard = ({ area, onClick }) => {
       className="group h-full w-full cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/60 hover:shadow-xl"
     >
       {/* Image */}
-      <div className="flex items-center justify-center h-28 bg-gray-50">
+      <div className="flex filter brightness-80 contrast-160 items-center justify-center h-24 bg-gray-50">
         <img
           src={area.image}
           alt={area.title}
-          className="h-28 w-28 object-contain transition-transform duration-300 group-hover:scale-105"
+          className="h-24 w-28 object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
       {/* Content */}
       <div className="p-6 text-center">
-        <h3 className="mb-4 text-xl font-semibold text-[#304669]">{area.title}</h3>
+        <h3 className="mb-4 text-xl font-semibold text-[#304669]">
+          {area.title}
+        </h3>
 
         <div className="inline-flex items-center gap-2 font-medium text-[#B08B18]">
           <span>Learn More</span>
