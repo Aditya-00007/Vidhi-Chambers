@@ -14,7 +14,7 @@ const navItems = [
   },
   { label: "Our Team", href: "/team" },
   { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Our Clients", href: "/clients" },
+  { label: "Articles", href: "/articles" },
   {
     label: "Contact Us",
     dropdown: [
