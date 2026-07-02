@@ -1,17 +1,60 @@
-import { useState } from "react";
-import articles from "../data/articles";
+import { useState, useEffect } from "react";
+import mockArticles from "../data/articles";
 import ArticleCard from "../components/ArticleCard";
 import ArticleModal from "./ArticleModal";
+import axios from "axios";
 
 const ArticlesGrid = () => {
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(3);
   const [selectedArticle, setSelectedArticle] = useState(null);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const { data } = await axios.get("/api/articles");
+        if (data.success && data.articles && data.articles.length > 0) {
+          const mapped = data.articles.map(art => ({
+            ...art,
+            image: art.cover_image,
+            readTime: art.read_time,
+            date: new Date(art.created_at).toLocaleDateString("en-IN", {
+              day: "numeric",
+              month: "long",
+              year: "numeric"
+            })
+          }));
+          setArticles(mapped);
+        } else {
+          setArticles(mockArticles);
+        }
+      } catch (error) {
+        console.error("Failed to load articles from database API, using mock fallback:", error);
+        setArticles(mockArticles);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchArticles();
+  }, []);
 
   const visibleArticles = articles.slice(0, visibleCount);
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + 3);
   };
+
+  if (loading) {
+    return (
+      <section id="articles-grid" className="py-24 bg-[#FCFCFC]">
+        <div className="max-w-7xl mx-auto px-6 flex justify-center items-center h-48">
+          <div className="h-8 w-8 animate-spin rounded-full border-4 border-slate-200 border-t-[#1F3657]"></div>
+        </div>
+      </section>
+    );
+  }
+
 
   return (
     <section id="articles-grid" className="py-24 bg-[#FCFCFC]">

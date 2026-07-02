@@ -185,6 +185,13 @@ const Header = () => {
               >
                 Get in Touch
               </Link>
+              <Link
+                to="/admin/login"
+                onClick={closeMenu}
+                className="block rounded-lg bg-[#379dd4] py-3 text-center font-semibold text-[#0F172A]"
+              >
+                LogIn
+              </Link>
             </div>
           </nav>
         </div>
