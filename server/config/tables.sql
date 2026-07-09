@@ -16,7 +16,7 @@ CREATE TABLE articles (
     content TEXT NOT NULL,
     category VARCHAR(100),
     read_time VARCHAR(50),
-    cover_image VARCHAR(255),
+    cover_image TEXT,
     author VARCHAR(100) DEFAULT 'Vidhi Chambers',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

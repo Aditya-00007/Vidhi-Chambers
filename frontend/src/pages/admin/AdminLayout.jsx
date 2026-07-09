@@ -59,7 +59,7 @@ const AdminLayout = () => {
 
         <button
           onClick={logout}
-          className="absolute bottom-6 left-3 right-3 flex items-center gap-3 rounded-lg px-4 py-3 text-red-600 transition hover:bg-red-50"
+          className="absolute bottom-6 left-3 right-3 flex items-center gap-3 rounded-lg px-4 py-3 text-red-600 transition hover:bg-red-50 w-58"
         >
           <LogOut size={18} />
           Logout

@@ -23,8 +23,8 @@ const ArticleModal = ({ article, onClose }) => {
         className="
           relative
           w-full
-          max-w-5xl
-          max-h-[90vh]
+          max-w-6xl
+          max-h-[95vh]
           overflow-y-auto
           rounded-3xl
           bg-white
@@ -56,7 +56,7 @@ const ArticleModal = ({ article, onClose }) => {
           src={article.image}
           alt={article.title}
           className="
-            h-80
+            h-70
             w-full
             object-cover
           "
