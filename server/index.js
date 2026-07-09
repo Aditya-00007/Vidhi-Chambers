@@ -1,10 +1,14 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import dns from "dns";
 import authRoutes from "./routes/auth.routes.js";
 import inquiryRoutes from "./routes/inquiry.routes.js";
 import articleRoutes from "./routes/article.routes.js";
 import pool from "./config/db.js";
+
+// Force IPv4 resolution to prevent ENETUNREACH connection errors to database (e.g. Supabase) on Render
+dns.setDefaultResultOrder("ipv4first");
 
 dotenv.config();
 
