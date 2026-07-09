@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import mockArticles from "../data/articles";
 import ArticleCard from "../components/ArticleCard";
 import ArticleModal from "./ArticleModal";
-import axios from "axios";
+import api from "../api/axios";
 
 const ArticlesGrid = () => {
   const [articles, setArticles] = useState([]);
@@ -13,7 +13,7 @@ const ArticlesGrid = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const { data } = await axios.get("/api/articles");
+        const { data } = await api.get("/api/articles");
         if (data.success && data.articles && data.articles.length > 0) {
           const mapped = data.articles.map(art => ({
             ...art,

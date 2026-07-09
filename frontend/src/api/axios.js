@@ -1,7 +1,11 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "", // Relies on Vite proxy locally, and relative paths in deployment
+  baseURL: import.meta.env.VITE_API_URL || (
+    window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+      ? "http://localhost:5000"
+      : "https://vidhi-chambers.onrender.com"
+  ),
 });
 
 // Request interceptor to automatically attach authorization headers

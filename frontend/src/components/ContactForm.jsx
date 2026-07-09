@@ -1,6 +1,7 @@
 import { useState } from "react";
 import courts from "../data/courts";
 import { siteInfo } from "../data/siteInfo";
+import api from "../api/axios";
 
 const ContactForm = ({ backgroundImage }) => {
   const [loading, setLoading] = useState(false);
@@ -25,19 +26,7 @@ const ContactForm = ({ backgroundImage }) => {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/inquiries", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Something went wrong.");
-      }
+      const { data } = await api.post("/api/inquiries", formData);
 
       alert(data.message);
 
@@ -50,7 +39,8 @@ const ContactForm = ({ backgroundImage }) => {
       });
     } catch (error) {
       console.error(error);
-      alert(error.message);
+      const errMsg = error.response?.data?.message || error.message || "Something went wrong.";
+      alert(errMsg);
     } finally {
       setLoading(false);
     }

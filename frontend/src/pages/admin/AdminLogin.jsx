@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../../api/axios";
 import logo from "../../assets/newlogo.png";
 
 const AdminLogin = () => {
@@ -28,7 +28,7 @@ const AdminLogin = () => {
     setError("");
 
     try {
-      const { data } = await axios.post("/api/admin/login", form);
+      const { data } = await api.post("/api/admin/login", form);
 
       localStorage.setItem("token", data.token);
 
