@@ -44,6 +44,8 @@ const DisclaimerModal = () => {
           rounded-3xl
           shadow-2xl
           overflow-hidden
+          max-h-[90vh] md:max-h-[85vh]
+          flex flex-col
         "
       >
         {/* Header */}
@@ -51,14 +53,15 @@ const DisclaimerModal = () => {
         <div
           className="
             text-black  
-            px-8 py-6
+            px-6 py-5 md:px-8 md:py-6
             flex items-center gap-4
+            border-b border-slate-100
           "
         >
           <div
             className="
             text-black
-              w-14 h-14
+              w-12 h-12 md:w-14 md:h-14
               rounded-2xl
               flex items-center justify-center
             "
@@ -67,9 +70,9 @@ const DisclaimerModal = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black">Disclaimer</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-black font-sans">Disclaimer</h2>
 
-            <p className="text-slate-800 text-sm mt-1">
+            <p className="text-slate-500 text-xs md:text-sm mt-0.5">
               Important Notice Before Proceeding
             </p>
           </div>
@@ -77,21 +80,21 @@ const DisclaimerModal = () => {
 
         {/* Content */}
 
-        <div className="p-2 md:p-4">
-          <div className="space-y-4 text-slate-600 leading-8">
+        <div className="px-6 pb-6 md:px-8 md:pb-8 overflow-y-auto flex-1">
+          <div className="space-y-4 text-slate-600 leading-normal md:leading-8 text-sm md:text-base pt-6">
             <p>
               Lawyers and law offices are not allowed to solicit clients or
               advertise, according to the{" "}
               <strong>Bar Council of India Guidelines.</strong>
             </p>
 
-            <div className="border-l-4 border-[#D4AF37] bg-[#FCFAF5] px-5 py-5 rounded-r-lg">
-              <p className="text-slate-700 leading-8">
+            <div className="border-l-4 border-[#D4AF37] bg-[#FCFAF5] px-4 py-4 md:px-5 md:py-5 rounded-r-lg">
+              <p className="text-slate-700 font-medium">
                 By clicking <strong>"I Agree"</strong>, you acknowledge and
                 confirm that:
               </p>
 
-              <ul className="mt-4 list-disc pl-6 space-y-3 marker:text-[#D4AF37]">
+              <ul className="mt-3 list-disc pl-5 space-y-2 md:space-y-3 marker:text-[#D4AF37]">
                 <li>
                   You are independently looking for information about{" "}
                   <strong>Vidhi Chambers (VC)</strong>.
@@ -110,17 +113,17 @@ const DisclaimerModal = () => {
 
           {/* Buttons */}
 
-          <div className="mt-6 flex flex-col sm:flex-row justify-end gap-4">
+          <div className="mt-6 flex flex-col sm:flex-row justify-end gap-3 md:gap-4">
             <button
               onClick={handleExit}
-              className="px-6 py-3 rounded-xl border border-slate-300 text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+              className="px-5 py-2.5 md:px-6 md:py-3 rounded-xl border border-slate-300 text-slate-600 hover:bg-slate-100 transition cursor-pointer text-sm md:text-base font-medium"
             >
               Exit Website
             </button>
 
             <button
               onClick={handleAccept}
-              className="px-8 py-3 rounded-xl bg-[#D4AF37] text-[#0F172A] font-semibold hover:brightness-95 transition cursor-pointer"
+              className="px-6 py-2.5 md:px-8 md:py-3 rounded-xl bg-[#D4AF37] text-[#0F172A] font-semibold hover:brightness-95 transition cursor-pointer text-sm md:text-base"
             >
               I Agree
             </button>

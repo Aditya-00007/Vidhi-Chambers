@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { X, Quote, Star, ArrowRight } from "lucide-react";
-
 import { Link } from "react-router-dom";
 
 const ClientExperienceModal = ({ experience, onClose }) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   if (!experience) return null;
 
   return (

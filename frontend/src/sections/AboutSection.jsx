@@ -1,15 +1,15 @@
 import { ArrowRight } from "lucide-react";
-import logo from "../assets/logo.png";
+import founderImg from "../assets/Lawyer.webp";
 
 const AboutSection = () => {
   const aboutData = {
     title: "About Us",
 
     founder: {
-      name: "Adv. Shivam Sharma",
-      designation: "Founder & Managing Partner",
+      name: "Adv. Naveen S. Bhardwaj",
+      designation: "Founder & Managing Counsel",
       experience: "15+",
-      image: logo,
+      image: founderImg,
     },
 
     description:
@@ -17,7 +17,7 @@ const AboutSection = () => {
   };
   return (
     <section className="py-24">
-      <div className="max-w-350 mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Image */}
           <div className="relative w-fit mx-auto">

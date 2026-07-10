@@ -177,20 +177,20 @@ const Header = () => {
               ),
             )}
 
-            <div className="px-6 pt-4">
+            <div className="px-6 pt-4 flex flex-col gap-3">
               <Link
                 to="/contact#contact"
                 onClick={closeMenu}
-                className="block rounded-lg bg-[#D4AF37] py-3 text-center font-semibold text-[#0F172A]"
+                className="block rounded-lg bg-[#D4AF37] py-3 text-center font-semibold text-[#0F172A] transition hover:brightness-95"
               >
                 Get in Touch
               </Link>
               <Link
                 to="/admin/login"
                 onClick={closeMenu}
-                className="block rounded-lg bg-[#379dd4] py-3 text-center font-semibold text-[#0F172A]"
+                className="block rounded-lg border border-[#D4AF37]/40 hover:border-[#D4AF37] text-[#D4AF37] py-3 text-center font-semibold transition"
               >
-                LogIn
+                Log In
               </Link>
             </div>
           </nav>

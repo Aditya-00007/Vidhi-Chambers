@@ -180,7 +180,7 @@ const OfficeLocation = () => {
               src="https://maps.google.com/maps?q=House%20No.%20132%20MDC%20Sector%206%20Panchkula&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
-              className="min-h-105"
+              className="min-h-[350px] lg:min-h-[450px]"
               loading="lazy"
             />
           </div>

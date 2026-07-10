@@ -107,7 +107,7 @@ const ContactFAQ = () => {
                 className={`
               transition-all duration-300
               overflow-hidden
-              ${openIndex === index ? "max-h-60" : "max-h-0"}
+              ${openIndex === index ? "max-h-[500px]" : "max-h-0"}
             `}
               >
                 <p

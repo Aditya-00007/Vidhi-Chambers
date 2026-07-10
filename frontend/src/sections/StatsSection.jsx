@@ -30,7 +30,7 @@ const StatsSection = () => {
   ];
   return (
     <section className="py-24 ">
-      <div className="max-w-350 mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[40%_60%] gap-16 items-center">
           {/* Left Content */}
           <div>

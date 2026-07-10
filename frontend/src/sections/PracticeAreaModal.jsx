@@ -1,7 +1,15 @@
+import { useEffect } from "react";
 import { X, Scale, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PracticeAreaModal = ({ area, onClose }) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   if (!area) return null;
 
   return (
@@ -11,6 +19,7 @@ const PracticeAreaModal = ({ area, onClose }) => {
     >
       <div
         className="
+relative
 bg-white
 rounded-3xl
 overflow-hidden

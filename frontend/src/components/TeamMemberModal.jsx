@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import { X, Mail, Briefcase, GraduationCap } from "lucide-react";
 
 const TeamMemberModal = ({ member, onClose }) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   if (!member) return null;
 
   return (
@@ -9,13 +17,13 @@ const TeamMemberModal = ({ member, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-3xl max-w-7xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+        className="relative bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}{" "}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 z-20 p-2 rounded-full bg-slate-100 hover:bg-slate-200 transition"
+          className="absolute top-5 right-5 z-20 p-2 rounded-full bg-slate-100/80 hover:bg-slate-200 backdrop-blur transition cursor-pointer"
         >
           {" "}
           <X size={20} />{" "}
@@ -26,7 +34,7 @@ const TeamMemberModal = ({ member, onClose }) => {
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-full object-cover min-h-[450px]"
+              className="w-full h-64 sm:h-80 lg:h-full object-cover lg:min-h-[450px]"
             />
           </div>
 

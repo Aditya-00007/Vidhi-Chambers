@@ -47,7 +47,7 @@ const WhyChooseUsSection = () => {
 
   return (
     <section className="py-24">
-      <div className="max-w-350 mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-16">
           <span className="text-(--accent) uppercase tracking-[3px] font-medium">
