@@ -9,7 +9,7 @@ const TeamMemberModal = ({ member, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+        className="relative bg-white rounded-3xl max-w-7xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}{" "}
@@ -20,7 +20,7 @@ const TeamMemberModal = ({ member, onClose }) => {
           {" "}
           <X size={20} />{" "}
         </button>
-        <div className="grid lg:grid-cols-2">
+        <div className="grid lg:grid-cols-3">
           {/* Left Image */}
           <div className="bg-[#FAF9F6]">
             <img
@@ -31,7 +31,7 @@ const TeamMemberModal = ({ member, onClose }) => {
           </div>
 
           {/* Right Content */}
-          <div className="p-8 lg:p-10">
+          <div className=" col-span-2 p-8 lg:p-10">
             <span className="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-sm font-medium">
               {member.category}
             </span>

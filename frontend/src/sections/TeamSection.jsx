@@ -1,8 +1,8 @@
 import { useState } from "react";
 import TeamCard from "../components/TeamCard";
-import founderImg from "../assets/Lawyer.webp";
-import member2 from "../assets/Lawyer.webp";
+
 import TeamMemberModal from "../components/TeamMemberModal";
+import teamMembers from "../data/teamMembers";
 
 const TeamSection = () => {
   const [active, setActive] = useState("All");
@@ -10,74 +10,10 @@ const TeamSection = () => {
 
   const categories = [
     "All",
-    "Leadership",
+    "Assistant Advocate",
     "Senior Advocates",
-    "Associates",
+    "Practicing Lawyer",
     "Consultants",
-  ];
-
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Adv. Naveen Bharadwaj",
-      designation: "Founder & Managing Counsel",
-      category: "Leadership",
-      image: founderImg,
-      experience: "15+ Years",
-      education: "LL.B., LL.M.",
-      expertise: ["Civil Litigation", "Corporate Advisory", "Arbitration"],
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      email: "[founder@vidhichambers.com](mailto:founder@vidhichambers.com)",
-    },
-
-    {
-      id: 2,
-      name: "Adv. Member Name",
-      designation: "Senior Advocate",
-      category: "Senior Advocates",
-      image: member2,
-      experience: "10+ Years",
-      expertise: ["Family Law", "Property Matters"],
-      education: "LL.B., LL.M.",
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      email: "member@vidhichambers.com",
-    },
-    {
-      id: 5,
-      name: "Adv. Member Name",
-      designation: "Senior Advocate",
-      category: "Senior Advocates",
-      image: member2,
-      experience: "10+ Years",
-      education: "LL.B., LL.M.",
-      expertise: ["Family Law", "Property Matters"],
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      email: "member@vidhichambers.com",
-    },
-    {
-      id: 3,
-      name: "Adv. Member Name",
-      designation: "Senior Advocate",
-      category: "Senior Advocates",
-      image: member2,
-      experience: "10+ Years",
-      education: "LL.B., LL.M.",
-      expertise: ["Family Law", "Property Matters"],
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      email: "member@vidhichambers.com",
-    },
-    {
-      id: 4,
-      name: "Adv. Member Name",
-      designation: "Senior Advocate",
-      category: "Senior Advocates",
-      education: "LL.B., LL.M.",
-      image: member2,
-      experience: "10+ Years",
-      expertise: ["Family Law", "Property Matters"],
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      email: "member@vidhichambers.com",
-    },
   ];
 
   const filteredMembers =
