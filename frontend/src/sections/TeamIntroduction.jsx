@@ -51,7 +51,7 @@ const TeamIntroduction = () => {
 
         {/* Experience Badge */}
         <div className="absolute bottom-4 left-4 sm:-bottom-6 sm:-left-6 z-20 bg-amber-200 text-blue-950 px-5 py-3 sm:px-6 sm:py-4 rounded-2xl shadow-lg">
-          <div className="text-3xl font-bold">15</div>
+          <div className="text-3xl font-bold">20+</div>
 
           <div className="text-sm">Years Experience</div>
         </div>

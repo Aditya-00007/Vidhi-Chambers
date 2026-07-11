@@ -66,7 +66,7 @@ const TeamHero = () => {
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
-            <h3 className="text-4xl font-bold text-[#304669]">15+</h3>
+            <h3 className="text-4xl font-bold text-[#304669]">20+</h3>
             <p className="mt-2 text-slate-600">Years Experience</p>
           </div>
 

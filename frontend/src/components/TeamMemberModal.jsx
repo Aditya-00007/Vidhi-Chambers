@@ -50,15 +50,6 @@ const TeamMemberModal = ({ member, onClose }) => {
 
             <p className="text-lg text-slate-500 mt-2">{member.designation}</p>
 
-            {/* Experience */}
-            <div className="mt-8 flex items-center gap-3">
-              <Briefcase size={18} className="text-[#D4AF37]" />
-
-              <span className="font-medium text-[#304669]">
-                {member.experience}
-              </span>
-            </div>
-
             {/* Practice Areas */}
             <div className="mt-8">
               <h3 className="font-semibold text-[#304669] text-lg">
@@ -103,14 +94,6 @@ const TeamMemberModal = ({ member, onClose }) => {
 
             {/* Contact */}
             <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href={`mailto:${member.email}`}
-                className="inline-flex items-center gap-2 bg-[#304669] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#24364f] transition"
-              >
-                <Mail size={18} />
-                Email
-              </a>
-
               <button
                 onClick={onClose}
                 className="border border-[#304669] text-[#304669] px-6 py-3 rounded-xl font-medium hover:bg-[#304669] hover:text-white transition"

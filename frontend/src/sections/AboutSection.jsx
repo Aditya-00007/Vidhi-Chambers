@@ -8,7 +8,7 @@ const AboutSection = () => {
     founder: {
       name: "Adv. Naveen S. Bhardwaj",
       designation: "Founder & Managing Counsel",
-      experience: "15+",
+      experience: "20+",
       image: founderImg,
     },
 

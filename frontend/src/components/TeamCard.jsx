@@ -41,7 +41,7 @@ const TeamCard = ({ member, onClick }) => {
 
         <p className="text-slate-700 mt-1">{member.designation}</p>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        {/* <div className="mt-4 flex flex-wrap gap-2">
           {member.expertise.slice(0, 2).map((item) => (
             <span
               key={item}
@@ -58,7 +58,7 @@ const TeamCard = ({ member, onClick }) => {
               {item}
             </span>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-6 flex items-center gap-2 text-[#D4AF37] font-medium">
           View Profile

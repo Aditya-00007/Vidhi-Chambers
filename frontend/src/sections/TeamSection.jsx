@@ -8,13 +8,7 @@ const TeamSection = () => {
   const [active, setActive] = useState("All");
   const [selectedMember, setSelectedMember] = useState(null);
 
-  const categories = [
-    "All",
-    "Assistant Advocate",
-    "Senior Advocates",
-    "Practicing Lawyer",
-    "Consultants",
-  ];
+  const categories = ["All"];
 
   const filteredMembers =
     active === "All"
@@ -40,27 +34,6 @@ const TeamSection = () => {
             legal expertise to provide trusted representation and strategic
             guidance.
           </p>
-        </div>
-
-        {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mt-14">
-          {categories.map((item) => (
-            <button
-              key={item}
-              onClick={() => setActive(item)}
-              className={`
-            px-6 py-3 rounded-full text-sm font-medium transition-all
-
-            ${
-              active === item
-                ? "bg-[#304669] text-white"
-                : "bg-white text-slate-600 border border-slate-200 hover:border-[#D4AF37]"
-            }
-          `}
-            >
-              {item}
-            </button>
-          ))}
         </div>
 
         {/* Grid */}

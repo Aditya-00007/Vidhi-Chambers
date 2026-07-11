@@ -4,16 +4,16 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    value: "+91 XXXXX XXXXX",
+    value: "+91 9467694041",
     description: "Speak directly with our team regarding your legal matter.",
-    link: "tel:+91XXXXXXXXXX",
+    link: "tel:+91 9467694041",
     linkText: "Call Now",
   },
 
   {
     icon: Mail,
     title: "Email Us",
-    value: "[info@vidhichambers.com](mailto:info@vidhichambers.com)",
+    value: "Vidhichambers@yahoo.co.in",
     description: "Send us your inquiry and we'll get back to you promptly.",
     link: "mailto:info@vidhichambers.com",
     linkText: "Send Email",
@@ -22,7 +22,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Our Office",
-    value: "Nashik, Maharashtra",
+    value:
+      "House No. 132, MDC Sector 6, Panchkula - 134108, Near Community Center, Chandigarh",
     description:
       "Schedule a consultation and meet with our legal professionals.",
     link: "#office-location",

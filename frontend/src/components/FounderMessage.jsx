@@ -37,7 +37,7 @@ const FounderMessage = () => {
             </p>
 
             <p className="mt-8 text-slate-600 leading-8">
-              Since our establishment in 2011, our mission has remained
+              Since our establishment in 2003, our mission has remained
               unwavering: to provide reliable legal representation grounded in
               trust, professionalism, and a deep commitment to achieving
               meaningful outcomes.
@@ -61,7 +61,7 @@ const FounderMessage = () => {
               </p>
 
               <p className="text-slate-500 mt-2">
-                15+ Years of Legal Experience
+                20+ Years of Legal Experience
               </p>
             </div>
           </div>

@@ -16,7 +16,7 @@ const AboutusHero = () => {
 
           <h1 className="mb-6 text-4xl font-bold leading-tight text-[#304669] sm:text-5xl md:text-7xl">
             Trusted Legal Counsel
-            <span className="block text-[#D4AF37]">Since 2011</span>
+            <span className="block text-[#D4AF37]">Since 2003</span>
           </h1>
 
           <p className="mx-auto max-w-4xl text-lg md:text-xl leading-9 text-slate-600">
@@ -27,7 +27,7 @@ const AboutusHero = () => {
           <p className="mx-auto mt-8 max-w-4xl text-base md:text-lg leading-8 text-slate-500">
             Vidhi Chambers is a distinguished law firm providing comprehensive
             legal representation and advisory services to individuals,
-            businesses, and institutions. With over 15 years of experience, our
+            businesses, and institutions. With over 20 years of experience, our
             team combines legal expertise, strategic thinking, and
             client-focused advocacy to achieve effective outcomes across a broad
             spectrum of legal matters.
@@ -52,7 +52,7 @@ const AboutusHero = () => {
 
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="bg-white rounded-2xl p-6 shadow-lg border-t-4 border-[#D4AF37] text-center">
-            <h3 className="text-4xl font-bold text-[#304669]">15+</h3>
+            <h3 className="text-4xl font-bold text-[#304669]">20+</h3>
             <p className="mt-2 text-slate-600">Years Experience</p>
           </div>
 
@@ -67,7 +67,7 @@ const AboutusHero = () => {
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-lg border-t-4 border-[#D4AF37] text-center">
-            <h3 className="text-4xl font-bold text-[#304669]">500+</h3>
+            <h3 className="text-4xl font-bold text-[#304669]">4000+</h3>
             <p className="mt-2 text-slate-600">Satisfied Clients</p>
           </div>
         </div>
