@@ -1,11 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || (
-    window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    (window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1"
       ? "http://localhost:5000"
-      : "https://vidhi-chambers.onrender.com"
-  ),
+      : "https://vidhi-chambers-nnb8.onrender.com"),
 });
 
 // Request interceptor to automatically attach authorization headers
@@ -19,7 +20,7 @@ api.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 export default api;
