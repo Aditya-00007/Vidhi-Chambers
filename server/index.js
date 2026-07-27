@@ -9,7 +9,12 @@ import pool from "./config/db.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL,
+  }),
+);
+
 app.use(express.json());
 
 // Serve static uploads
@@ -30,8 +35,10 @@ app.get("/health", async (req, res) => {
       env: {
         NODE_ENV: process.env.NODE_ENV || "not set",
         hasDatabaseUrl: !!process.env.DATABASE_URL,
-        databaseUrlLength: process.env.DATABASE_URL ? process.env.DATABASE_URL.length : 0
-      }
+        databaseUrlLength: process.env.DATABASE_URL
+          ? process.env.DATABASE_URL.length
+          : 0,
+      },
     });
   } catch (err) {
     res.status(500).json({
@@ -41,8 +48,10 @@ app.get("/health", async (req, res) => {
       env: {
         NODE_ENV: process.env.NODE_ENV || "not set",
         hasDatabaseUrl: !!process.env.DATABASE_URL,
-        databaseUrlLength: process.env.DATABASE_URL ? process.env.DATABASE_URL.length : 0
-      }
+        databaseUrlLength: process.env.DATABASE_URL
+          ? process.env.DATABASE_URL.length
+          : 0,
+      },
     });
   }
 });

@@ -1,10 +1,12 @@
 import bcrypt from "bcryptjs";
 import { generateToken } from "../utils/jwt.js";
+import dotenv from "dotenv";
 
-const ADMIN_EMAIL = "vidhichambers@yahoo.com";
+dotenv.config();
 
-const HASHED_PASSWORD =
-  "$2b$10$c04eX528wJGMXOl3l/RknukKvPPq7Ut0OQIf8c7plZkaDI/1kGTXe";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+
+const HASHED_PASSWORD = process.env.HASHED_PASSWORD;
 
 export const login = async (req, res) => {
   try {
