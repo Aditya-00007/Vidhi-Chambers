@@ -4,6 +4,7 @@ import PracticeAreasHero from "../sections/PracticeAreasHero";
 import PracticeIntroduction from "../sections/PracticeIntroduction";
 import PracticeAreaGrid from "../sections/PracticeAreaGrid";
 import practiceAreas from "../data/practiceAreas";
+import WhoWeServe from "../sections/WhoWeServe";
 const PracticeAreasPage = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const PracticeAreasPage = () => {
       <PracticeAreasHero />
       <PracticeIntroduction />
       <PracticeAreaGrid practiceAreas={practiceAreas} />
+      <WhoWeServe />
       <FooterCTA />
     </>
   );
