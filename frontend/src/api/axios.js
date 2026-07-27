@@ -23,4 +23,16 @@ api.interceptors.request.use(
   },
 );
 
+// Response interceptor to handle session expiration (401 Unauthorized)
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response && error.response.status === 401) {
+      localStorage.removeItem("token");
+      window.location.href = "/admin/login";
+    }
+    return Promise.reject(error);
+  }
+);
+
 export default api;

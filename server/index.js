@@ -25,37 +25,6 @@ app.use("/api/admin", authRoutes);
 app.use("/api/inquiries", inquiryRoutes);
 app.use("/api/articles", articleRoutes);
 
-app.get("/health", async (req, res) => {
-  try {
-    const result = await pool.query("SELECT NOW()");
-    res.status(200).json({
-      status: "OK",
-      database: "Connected",
-      timestamp: result.rows[0].now,
-      env: {
-        NODE_ENV: process.env.NODE_ENV || "not set",
-        hasDatabaseUrl: !!process.env.DATABASE_URL,
-        databaseUrlLength: process.env.DATABASE_URL
-          ? process.env.DATABASE_URL.length
-          : 0,
-      },
-    });
-  } catch (err) {
-    res.status(500).json({
-      status: "Error",
-      database: "Connection Failed",
-      error: err.message,
-      env: {
-        NODE_ENV: process.env.NODE_ENV || "not set",
-        hasDatabaseUrl: !!process.env.DATABASE_URL,
-        databaseUrlLength: process.env.DATABASE_URL
-          ? process.env.DATABASE_URL.length
-          : 0,
-      },
-    });
-  }
-});
-
 app.get("/", (req, res) => {
   res.send("Backend is running");
 });
