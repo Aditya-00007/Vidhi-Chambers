@@ -56,29 +56,6 @@ const ArticlesHero = () => {
             </a>
           </div>
         </div>
-
-        {/* Highlights */}
-        <div className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4">
-          <div className="rounded-2xl border-t-4 border-[#D4AF37] bg-white p-6 text-center shadow-lg">
-            <h3 className="text-4xl font-bold text-[#304669]">Legal</h3>
-            <p className="mt-2 text-slate-600">Insights</p>
-          </div>
-
-          <div className="rounded-2xl border-t-4 border-[#D4AF37] bg-white p-6 text-center shadow-lg">
-            <h3 className="text-4xl font-bold text-[#304669]">Case</h3>
-            <p className="mt-2 text-slate-600">Analysis</p>
-          </div>
-
-          <div className="rounded-2xl border-t-4 border-[#D4AF37] bg-white p-6 text-center shadow-lg">
-            <h3 className="text-4xl font-bold text-[#304669]">Legal</h3>
-            <p className="mt-2 text-slate-600">Updates</p>
-          </div>
-
-          <div className="rounded-2xl border-t-4 border-[#D4AF37] bg-white p-6 text-center shadow-lg">
-            <h3 className="text-4xl font-bold text-[#304669]">Expert</h3>
-            <p className="mt-2 text-slate-600">Perspectives</p>
-          </div>
-        </div>
       </div>
     </section>
   );

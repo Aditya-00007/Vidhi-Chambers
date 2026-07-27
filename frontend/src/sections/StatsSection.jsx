@@ -11,13 +11,13 @@ const StatsSection = () => {
     },
     {
       id: 2,
-      value: 4500,
+      value: 4000,
       suffix: "+",
       label: "Clients Served",
     },
     {
       id: 3,
-      value: 17,
+      value: 20,
       suffix: "+",
       label: "Years in Business",
     },
