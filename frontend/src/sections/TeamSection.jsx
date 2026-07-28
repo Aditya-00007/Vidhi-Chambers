@@ -37,7 +37,7 @@ const TeamSection = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-16 mt-16 mx-18">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mt-16 mx-2 sm:mx-4 md:mx-6 lg:mx-12 xl:mx-18">
           {filteredMembers.map((member) => (
             <TeamCard
               key={member.id}

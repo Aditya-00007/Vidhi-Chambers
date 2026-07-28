@@ -28,10 +28,12 @@ const navItems = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const closeMenu = () => {
     setIsOpen(false);
     setOpenMobileDropdown(null);
+    setActiveDropdown(null);
   };
 
   return (
@@ -60,20 +62,36 @@ const Header = () => {
           >
             {navItems.map((item) =>
               item.dropdown ? (
-                <div key={item.label} className="group relative">
+                <div
+                  key={item.label}
+                  className="group relative"
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
                   <button
                     type="button"
+                    onClick={() =>
+                      setActiveDropdown((prev) =>
+                        prev === item.label ? null : item.label,
+                      )
+                    }
                     className="flex items-center gap-1 font-medium text-slate-600 transition-colors hover:text-[#D4AF37]"
                   >
                     {item.label}
                     <ChevronDown size={15} aria-hidden="true" />
                   </button>
 
-                  <div className="invisible absolute left-0 top-full z-50 mt-3 w-56 rounded-xl border border-slate-200 bg-white py-2 opacity-0 shadow-xl transition-all duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                  <div
+                    className={`absolute left-0 top-full z-50 mt-3 w-56 rounded-xl border border-slate-200 bg-white py-2 shadow-xl transition-all duration-200 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100 ${
+                      activeDropdown === item.label
+                        ? "visible opacity-100"
+                        : "invisible opacity-0"
+                    }`}
+                  >
                     {item.dropdown.map((subItem) => (
                       <Link
                         key={subItem.label}
                         to={subItem.path}
+                        onClick={() => setActiveDropdown(null)}
                         className="block px-5 py-3 text-slate-700 transition hover:bg-slate-50 hover:text-[#D4AF37]"
                       >
                         {subItem.label}
