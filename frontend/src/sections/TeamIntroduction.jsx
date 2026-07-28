@@ -35,25 +35,25 @@ const TeamIntroduction = () => {
       </div>
 
       {/* Image Section */}
+      <div className="relative mx-auto mt-12 lg:mt-0 px-6 sm:px-8 lg:mr-8 lg:px-0">
+        <div className="relative w-fit mx-auto">
+          {/* Gold Background Block */}
+          <div className="absolute inset-0 translate-x-4 translate-y-4 bg-[#D4AF37]/20 rounded-3xl" />
 
-      <div className="relative mx-auto mt-4 w-fit px-6 lg:mr-8 lg:mt-0 lg:px-0">
-        {/* Gold Background Block */}
-        <div className="absolute top-6 left-4 w-full h-full bg-amber-200 rounded-3xl" />
+          {/* Image */}
+          <div className="relative z-10 overflow-hidden rounded-3xl border border-slate-200 bg-[#FAF9F6] shadow-md">
+            <img
+              src={logo}
+              alt="Our Team"
+              className="w-64 sm:w-80 md:w-96 lg:w-[420px] max-w-full aspect-[4/3] lg:aspect-auto object-cover"
+            />
+          </div>
 
-        {/* Image */}
-        <div className="relative z-10 overflow-hidden rounded-3xl border border-gray-200 bg-amber-200">
-          <img
-            src={logo}
-            alt="Our Team"
-            className="w-70 sm:w-85 md:w-95 lg:w-full max-w-md object-cover"
-          />
-        </div>
-
-        {/* Experience Badge */}
-        <div className="absolute bottom-4 left-4 sm:-bottom-6 sm:-left-6 z-20 bg-amber-200 text-blue-950 px-5 py-3 sm:px-6 sm:py-4 rounded-2xl shadow-lg">
-          <div className="text-3xl font-bold">20+</div>
-
-          <div className="text-sm">Years Experience</div>
+          {/* Experience Badge */}
+          <div className="absolute -bottom-6 -left-4 sm:-bottom-8 sm:-left-8 z-20 bg-[#D4AF37] text-[#0F172A] px-5 py-3 sm:px-6 sm:py-4 rounded-2xl shadow-lg border border-[#D4AF37]/20">
+            <div className="text-2xl sm:text-3xl font-bold">20+</div>
+            <div className="text-xs sm:text-sm font-semibold">Years Experience</div>
+          </div>
         </div>
       </div>
     </section>
