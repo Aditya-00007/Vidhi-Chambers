@@ -18,7 +18,7 @@ const TeamSection = () => {
   return (
     <section id="team-grid" className="py-24 bg-[#FCFCFC]">
       {" "}
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="uppercase tracking-[4px] text-[#D4AF37] font-semibold">
@@ -37,7 +37,7 @@ const TeamSection = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-16 mt-16 mx-18">
           {filteredMembers.map((member) => (
             <TeamCard
               key={member.id}

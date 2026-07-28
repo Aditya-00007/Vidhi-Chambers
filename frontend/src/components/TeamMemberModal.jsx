@@ -28,27 +28,28 @@ const TeamMemberModal = ({ member, onClose }) => {
           {" "}
           <X size={20} />{" "}
         </button>
-        <div className="grid lg:grid-cols-3">
-          {/* Left Image
-          <div className="bg-[#FAF9F6]">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-full h-64 sm:h-80 lg:h-full object-cover lg:min-h-[450px]"
-            />
-          </div> */}
+        <div className="p-8 lg:p-10">
+          <div className="flex flex-col sm:flex-row justify-between items-start gap-6">
+            <div className="flex-1">
+              <span className="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-sm font-medium">
+                {member.category}
+              </span>
 
-          {/* Right Content */}
-          <div className=" col-span-3 p-8 lg:p-10">
-            <span className="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-sm font-medium">
-              {member.category}
-            </span>
+              <h2 className="mt-5 text-3xl sm:text-4xl font-bold text-[#304669]">
+                {member.name}
+              </h2>
 
-            <h2 className="mt-5 text-4xl font-bold text-[#304669]">
-              {member.name}
-            </h2>
+              <p className="text-lg text-slate-500 mt-2">{member.designation}</p>
+            </div>
 
-            <p className="text-lg text-slate-500 mt-2">{member.designation}</p>
+            <div className="flex-shrink-0 self-center sm:self-start pr-0 sm:pr-12 md:pr-16">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-2xl object-cover border-2 border-[#D4AF37]/20 shadow-md"
+              />
+            </div>
+          </div>
 
             {/* Practice Areas */}
             <div className="mt-8">
@@ -104,7 +105,6 @@ const TeamMemberModal = ({ member, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

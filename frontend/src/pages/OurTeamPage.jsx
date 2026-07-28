@@ -3,7 +3,6 @@ import FooterCTA from "../sections/FooterCTA";
 import TeamHero from "../sections/TeamHero";
 import TeamIntroduction from "../sections/TeamIntroduction";
 import TeamSection from "../sections/TeamSection";
-
 const OurTeamPage = () => {
   return (
     <>

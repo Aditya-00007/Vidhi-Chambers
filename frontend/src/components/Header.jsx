@@ -8,13 +8,12 @@ const navItems = [
     label: "About Us",
     dropdown: [
       { label: "About Us", path: "/about#about" },
-      { label: "CSR", path: "/about#csr" },
-      { label: "Core Values", path: "/about#values" },
+      { label: "Core Values", path: "/about#values" }, 
     ],
   },
-  { label: "Our Team", href: "/team" },
-  { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Articles", href: "/articles" },
+  { label: "Our Team", path: "/team#team" },
+  { label: "Practice Areas", path: "/practice-areas#practice" },
+  { label: "Articles", path: "/articles#articles" },
   {
     label: "Contact Us",
     dropdown: [
@@ -85,7 +84,7 @@ const Header = () => {
               ) : (
                 <NavLink
                   key={item.label}
-                  to={item.href}
+                  to={item.path}
                   className={({ isActive }) =>
                     `relative font-medium transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:bg-[#D4AF37] after:transition-all ${
                       isActive
@@ -164,7 +163,7 @@ const Header = () => {
               ) : (
                 <NavLink
                   key={item.label}
-                  to={item.href}
+                  to={item.path}
                   onClick={closeMenu}
                   className={({ isActive }) =>
                     `px-6 py-3 transition hover:bg-white/5 hover:text-[#D4AF37] ${
