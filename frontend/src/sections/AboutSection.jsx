@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import founderImg from "../assets/Lawyer.webp";
+import founderImg from "../assets/naveens.jpeg";
 
 const AboutSection = () => {
   const aboutData = {

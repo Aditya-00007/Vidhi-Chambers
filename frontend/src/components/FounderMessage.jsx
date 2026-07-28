@@ -1,4 +1,4 @@
-import founderImg from "../assets/logo.png";
+import founderImg from "../assets/naveens.jpeg";
 
 const FounderMessage = () => {
   return (

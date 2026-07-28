@@ -29,17 +29,17 @@ const TeamMemberModal = ({ member, onClose }) => {
           <X size={20} />{" "}
         </button>
         <div className="grid lg:grid-cols-3">
-          {/* Left Image */}
+          {/* Left Image
           <div className="bg-[#FAF9F6]">
             <img
               src={member.image}
               alt={member.name}
               className="w-full h-64 sm:h-80 lg:h-full object-cover lg:min-h-[450px]"
             />
-          </div>
+          </div> */}
 
           {/* Right Content */}
-          <div className=" col-span-2 p-8 lg:p-10">
+          <div className=" col-span-3 p-8 lg:p-10">
             <span className="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-sm font-medium">
               {member.category}
             </span>

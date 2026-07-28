@@ -60,7 +60,7 @@ const FooterCTA = () => {
 
               <p className="text-slate-400 mt-6 leading-7">
                 Providing trusted legal counsel and strategic representation
-                since 2011.
+                since 2003.
               </p>
             </div>
 
@@ -97,7 +97,7 @@ const FooterCTA = () => {
 
                 <li>
                   <Link
-                  to="/team"
+                    to="/team"
                     className="text-slate-400 hover:text-[#D4AF37]"
                   >
                     Our People
