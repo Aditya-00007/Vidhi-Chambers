@@ -8,7 +8,23 @@ const ContactHero = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl" />
 
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#304669]/5 rounded-full blur-3xl" />
-
+      <img
+        src="/balence.svg"
+        alt=""
+        aria-hidden="true"
+        className="
+    absolute
+    -right-24
+    top-0
+    w-100
+    h-100
+    opacity-5
+    pointer-events-none
+    select-none
+    object-contain
+    z-0
+  "
+      />
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto">
           {/* Label */}
