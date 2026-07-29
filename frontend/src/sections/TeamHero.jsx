@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const TeamHero = () => {
   return (
-    <section id="team" className="relative overflow-hidden bg-[#FCFCFC] py-20 md:py-24 lg:py-28">
+    <section
+      id="team"
+      className="relative overflow-hidden bg-[#FCFCFC] py-20 md:py-24 lg:py-28"
+    >
       {/* Decorative Background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl" />
 
@@ -85,13 +88,13 @@ const TeamHero = () => {
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
-            <h3 className="text-4xl font-bold text-[#304669]">1000+</h3>
+            <h3 className="text-4xl font-bold text-[#304669]">4000+</h3>
             <p className="mt-2 text-slate-600">Cases Handled</p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
             <h3 className="text-4xl font-bold text-[#304669]">Since</h3>
-            <p className="mt-2 text-slate-600">2011</p>
+            <p className="mt-2 text-slate-600">2003</p>
           </div>
         </div>
       </div>
