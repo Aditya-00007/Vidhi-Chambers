@@ -97,7 +97,9 @@ const ArticleModal = ({ article, onClose }) => {
             className="
               mt-6
               font-cormorant
-              text-5xl
+              text-2xl
+              sm:text-3xl
+              md:text-5xl
               font-semibold
               leading-tight
               text-[#1F3657]

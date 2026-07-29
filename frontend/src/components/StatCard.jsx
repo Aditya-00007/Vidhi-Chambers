@@ -24,7 +24,8 @@ const StatCard = ({ stat }) => {
     >
       <h3
         className="
-          text-5xl
+          text-3xl
+          md:text-5xl
           lg:text-6xl
           font-bold
           text-blue-950

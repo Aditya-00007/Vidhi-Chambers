@@ -75,7 +75,9 @@ const ClientExperienceModal = ({ experience, onClose }) => {
           <h2
             className="
               mt-5
-              text-4xl
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
               font-bold
               text-[#304669]
             "

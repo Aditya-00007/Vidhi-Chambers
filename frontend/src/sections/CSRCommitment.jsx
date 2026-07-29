@@ -8,7 +8,7 @@ const CSRCommitment = () => {
               Corporate Social Responsibility
             </span>
 
-            <h2 className="mt-5 font-cormorant text-5xl font-semibold text-[#1F3657] leading-tight ">
+            <h2 className="mt-5 font-cormorant text-3xl md:text-5xl font-semibold text-[#1F3657] leading-tight ">
               Contributing Beyond
               <br />
               The Courtroom

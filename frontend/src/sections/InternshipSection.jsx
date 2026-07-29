@@ -46,7 +46,8 @@ const InternshipSection = () => {
               className="
                 mt-4
                 font-cormorant
-                text-5xl
+                text-3xl
+                md:text-5xl
                 font-semibold
                 text-[#1F3657]
                 pb-4

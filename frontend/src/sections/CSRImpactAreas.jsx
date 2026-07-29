@@ -74,7 +74,8 @@ const CSRImpactAreas = () => {
             className="
               mt-5
               font-cormorant
-              text-5xl
+              text-3xl
+              md:text-5xl
               font-semibold
               text-[#1F3657]
             "

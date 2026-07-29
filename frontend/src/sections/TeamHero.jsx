@@ -78,22 +78,22 @@ const TeamHero = () => {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
-            <h3 className="text-4xl font-bold text-[#304669]">20+</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#304669]">20+</h3>
             <p className="mt-2 text-slate-600">Legal Professionals</p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
-            <h3 className="text-4xl font-bold text-[#304669]">20+</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#304669]">20+</h3>
             <p className="mt-2 text-slate-600">Years Experience</p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
-            <h3 className="text-4xl font-bold text-[#304669]">4000+</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#304669]">4000+</h3>
             <p className="mt-2 text-slate-600">Cases Handled</p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border-t-4 border-[#D4AF37]">
-            <h3 className="text-4xl font-bold text-[#304669]">Since</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#304669]">Since</h3>
             <p className="mt-2 text-slate-600">2003</p>
           </div>
         </div>

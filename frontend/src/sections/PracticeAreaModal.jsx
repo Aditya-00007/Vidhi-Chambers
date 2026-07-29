@@ -86,10 +86,11 @@ shadow-2xl
             <h2
               className="
             mt-5
-            text-4xl
+            text-2xl
+            sm:text-3xl
+            md:text-4xl
             font-bold
             text-[#304669]
-          
           "
             >
               {area.title}{" "}
