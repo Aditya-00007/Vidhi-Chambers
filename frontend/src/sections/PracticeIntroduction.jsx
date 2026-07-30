@@ -19,7 +19,7 @@ const PracticeIntroduction = () => {
 
             <div className="w-24 mx-auto h-1 bg-[#D4AF37] rounded-full mt-8" />
 
-            <p className="mt-8 text-slate-600 leading-9 text-lg">
+            <p className="mt-8 text-slate-600 leading-9 text-lg text-justify">
               Legal matters often require specialized expertise. Whether you are
               facing a dispute, seeking legal advice, protecting your business
               interests, or planning for future opportunities, our team provides

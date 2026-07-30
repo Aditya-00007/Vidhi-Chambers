@@ -29,21 +29,21 @@ const FounderMessage = () => {
 
             <div className="w-24 h-1 bg-[#D4AF37] mt-6 mb-8 rounded-full" />
 
-            <p className="text-lg text-slate-600 leading-9 italic">
+            <p className="text-lg text-slate-600 leading-9 italic text-justify">
               "At Vidhi Chambers, we believe legal counsel is not merely about
               resolving disputes—it is about protecting rights, creating
               opportunities, and empowering clients to make informed decisions
               with confidence."
             </p>
 
-            <p className="mt-8 text-slate-600 leading-8">
+            <p className="mt-8 text-lg text-slate-600 leading-8 text-justify">
               Since our establishment in 2003, our mission has remained
               unwavering: to provide reliable legal representation grounded in
               trust, professionalism, and a deep commitment to achieving
               meaningful outcomes.
             </p>
 
-            <p className="mt-6 text-slate-600 leading-8">
+            <p className="mt-6 text-lg text-slate-600 leading-8 text-justify">
               Every matter entrusted to us is approached with diligence,
               strategic insight, and complete dedication. We value the
               confidence our clients place in us and strive to build lasting

@@ -62,7 +62,8 @@ const InternshipSection = () => {
                 max-w-5xl
                 mx-auto
                 text-slate-600
-                leading-8
+                leading-8 
+                text-justify
               "
             >
               We offer internships to students studying at law schools to get

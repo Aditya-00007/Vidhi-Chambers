@@ -134,6 +134,7 @@ shadow-2xl
               mt-4
               text-slate-600
               leading-8
+              text-justify
             "
               >
                 {area.overview}

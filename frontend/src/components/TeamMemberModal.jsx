@@ -90,7 +90,7 @@ const TeamMemberModal = ({ member, onClose }) => {
                 Professional Profile
               </h3>
 
-              <p className="mt-3 text-slate-600 leading-8">{member.bio}</p>
+              <p className="mt-3 text-slate-600 leading-8 text-justify">{member.bio}</p>
             </div>
 
             {/* Contact */}

@@ -19,7 +19,7 @@ const TeamCard = ({ member, onClick }) => {
     >
       {/* Photo */}
 
-      <div className="h-55 overflow-hidden">
+      <div className="aspect-[4/3] md:h-55 overflow-hidden">
         <img
           src={member.image}
           alt={member.name}

@@ -144,6 +144,7 @@ const ArticleModal = ({ article, onClose }) => {
               text-lg
               leading-9
               text-slate-700
+              text-justify
             "
           >
             {article.content}

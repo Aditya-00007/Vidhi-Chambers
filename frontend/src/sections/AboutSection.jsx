@@ -53,7 +53,7 @@ const AboutSection = () => {
               Trusted Legal Guidance With Proven Expertise
             </h2>
 
-            <p className="mt-6 text-gray-600 leading-8">
+            <p className="mt-6 text-gray-600 leading-8 text-justify">
               {aboutData.description}
             </p>
 
