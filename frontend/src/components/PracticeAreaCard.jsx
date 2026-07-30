@@ -5,10 +5,10 @@ const PracticeAreaCard = ({ area, onClick }) => {
     <button
       type="button"
       onClick={onClick}
-      className="group h-full w-full cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/60 hover:shadow-xl"
+      className="group h-full w-full flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/60 hover:shadow-xl"
     >
       {/* Image */}
-      <div className="flex filter brightness-80 contrast-160 items-center justify-center h-24 bg-gray-50">
+      <div className="flex w-full filter brightness-80 contrast-160 items-center justify-center h-24 bg-gray-50">
         <img
           src={area.image}
           alt={area.title}
@@ -17,7 +17,7 @@ const PracticeAreaCard = ({ area, onClick }) => {
       </div>
 
       {/* Content */}
-      <div className="p-6 text-center">
+      <div className="p-6 text-center flex-1 flex flex-col items-center justify-between">
         <h3 className="mb-4 text-xl font-semibold text-[#304669]">
           {area.title}
         </h3>
